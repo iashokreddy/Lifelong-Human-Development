@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  height: 100%;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.meta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.order {
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.cardWrap {
+  position: relative;
+}
+
+.objective {
+  margin: 0;
+  color: var(--text-muted);
+}

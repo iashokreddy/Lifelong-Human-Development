@@ -1,4 +1,3 @@
-import { describe, expect, it } from 'vitest';
 import type { DevelopmentDomainKey } from '@lhd/shared';
 import { DOMAIN_LABELS, labelForDomain } from '../domain-labels';
 

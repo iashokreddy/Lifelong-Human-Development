@@ -1,0 +1,19 @@
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  margin: 0 0 0.75rem;
+}
+
+.lede {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 46rem;
+  margin: 0;
+}
+
+.sectionTitle {
+  margin: 2rem 0 0.5rem;
+}

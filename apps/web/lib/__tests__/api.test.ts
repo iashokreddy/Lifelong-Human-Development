@@ -1,4 +1,3 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { askAssistant, getPhase, getPhases } from '../api';
 
 const BASE = 'http://localhost:3001/api';
@@ -20,17 +19,13 @@ function nonOkResponse(status = 500): Response {
 }
 
 describe('api client', () => {
-  beforeEach(() => {
-    vi.restoreAllMocks();
-  });
-
   afterEach(() => {
-    vi.restoreAllMocks();
+    jest.restoreAllMocks();
   });
 
   it('getPhases() fetches <base>/phases with no-store', async () => {
-    const fetchMock = vi.fn().mockResolvedValue(okResponse([]));
-    vi.stubGlobal('fetch', fetchMock);
+    const fetchMock = jest.fn().mockResolvedValue(okResponse([]));
+    global.fetch = fetchMock as unknown as typeof fetch;
 
     const result = await getPhases();
 
@@ -42,8 +37,8 @@ describe('api client', () => {
   });
 
   it('getPhase() fetches <base>/phases/:idOrSlug', async () => {
-    const fetchMock = vi.fn().mockResolvedValue(okResponse({ id: 'phase-01' }));
-    vi.stubGlobal('fetch', fetchMock);
+    const fetchMock = jest.fn().mockResolvedValue(okResponse({ id: 'phase-01' }));
+    global.fetch = fetchMock as unknown as typeof fetch;
 
     await getPhase('phase-01');
 
@@ -52,12 +47,12 @@ describe('api client', () => {
   });
 
   it('askAssistant() POSTs <base>/ai/ask with bearer header and JSON body', async () => {
-    const fetchMock = vi
+    const fetchMock = jest
       .fn()
       .mockResolvedValue(
         okResponse({ answer: 'a', routedToHuman: false, citations: [] }),
       );
-    vi.stubGlobal('fetch', fetchMock);
+    global.fetch = fetchMock as unknown as typeof fetch;
 
     await askAssistant('q', 'tok');
 
@@ -69,12 +64,12 @@ describe('api client', () => {
   });
 
   it('askAssistant() omits the Authorization header when no token is given', async () => {
-    const fetchMock = vi
+    const fetchMock = jest
       .fn()
       .mockResolvedValue(
         okResponse({ answer: 'a', routedToHuman: false, citations: [] }),
       );
-    vi.stubGlobal('fetch', fetchMock);
+    global.fetch = fetchMock as unknown as typeof fetch;
 
     await askAssistant('q');
 
@@ -83,8 +78,8 @@ describe('api client', () => {
   });
 
   it('returns { ok: false } without throwing when fetch rejects (network error)', async () => {
-    const fetchMock = vi.fn().mockRejectedValue(new Error('network down'));
-    vi.stubGlobal('fetch', fetchMock);
+    const fetchMock = jest.fn().mockRejectedValue(new Error('network down'));
+    global.fetch = fetchMock as unknown as typeof fetch;
 
     const phases = await getPhases();
     const phase = await getPhase('phase-01');
@@ -96,8 +91,8 @@ describe('api client', () => {
   });
 
   it('returns { ok: false } without throwing when fetch resolves non-ok', async () => {
-    const fetchMock = vi.fn().mockResolvedValue(nonOkResponse(503));
-    vi.stubGlobal('fetch', fetchMock);
+    const fetchMock = jest.fn().mockResolvedValue(nonOkResponse(503));
+    global.fetch = fetchMock as unknown as typeof fetch;
 
     const result = await getPhases();
 
