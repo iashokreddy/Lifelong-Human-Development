@@ -11,7 +11,9 @@
   "scripts": {
     "content:validate": "node tools/pdf/validate-content.mjs",
     "pdf:build": "node tools/pdf/build-pdfs.mjs",
-    "test": "npm run content:validate"
+    "test": "npm run content:validate",
+    "test:api": "npm --workspace @lhd/api test",
+    "dev:api": "npm --workspace @lhd/api run start:dev"
   },
   "engines": {
     "node": ">=20"

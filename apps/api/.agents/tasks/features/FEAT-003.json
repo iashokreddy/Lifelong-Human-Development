@@ -1,0 +1,30 @@
+{
+  "id": "FEAT-003",
+  "type": "feat",
+  "description": "Identity, access control, and the user/progress domain with structural child-data protection. Covers auth (JWT + bcrypt + Roles guard/decorator), users (profiles + caregiver<->learner links with a single caregiver-access enforcement point), progress (ownership-scoped read/write of ProgressRecord), and DPDP-aligned data export/delete endpoints. One coherent feature because every piece shares the CaregiverAccessService choke point and the repository tokens from FEAT-001. Depends on FEAT-001; independent of FEAT-002.",
+  "status": "pending",
+  "steps": [
+    "Auth: create apps/api/src/auth/auth.service.ts (register: hash password with bcrypt, create User via UserRepository; validateUser: compare bcrypt; login: sign a JWT with sub=userId, role via @nestjs/jwt using JWT_SECRET from env). Create jwt.strategy.ts (passport-jwt, extract Bearer token, validate -> { userId, role }). Create jwt-auth.guard.ts (AuthGuard('jwt')). Create roles.decorator.ts (@Roles(...UserRole[]) via SetMetadata) and roles.guard.ts (reads required roles from reflector, compares to request.user.role; allow if no roles required or user role is included). Create current-user.decorator.ts (@CurrentUser() param decorator reading request.user). Create auth.controller.ts (POST /api/auth/register, POST /api/auth/login) and auth.module.ts (registers JwtModule, PassportModule, exports AuthService + guards). Import AuthModule in app.module.ts.",
+    "Auth tests: apps/api/src/auth/roles.guard.spec.ts — guard allows when user.role is in @Roles list, denies (ForbiddenException/false) when not, allows when no @Roles metadata present. apps/api/src/auth/auth.service.spec.ts — register hashes the password (stored hash != plaintext), validateUser accepts correct password and rejects wrong password.",
+    "Users + caregiver access: create apps/api/src/users/caregiver-access.service.ts with canAccess(actorId, actorRole, subjectUserId): boolean — true if actorId === subjectUserId, OR actorRole === 'admin', OR a CaregiverLink(caregiverId=actorId, learnerId=subjectUserId) exists via CaregiverLinkRepository. This is the SINGLE enforcement point; users and progress must call only this, no ad-hoc checks. Create users.service.ts (get/update profile; linkLearner/unlinkLearner creating CaregiverLink; createMinorAccount that requires a caregiver actor — minor accounts are caregiver-mediated, data-minimising: store only what is needed). Create users.controller.ts guarded by JwtAuthGuard (+ RolesGuard where appropriate); every route that targets another user's data calls CaregiverAccessService.canAccess and throws ForbiddenException on false.",
+    "DPDP data rights: create apps/api/src/users/data-rights.controller.ts with GET /api/users/:id/export (returns the user's profile + their progress records as a JSON bundle) and DELETE /api/users/:id (deletes the user, their links, and their progress). Both authorised through CaregiverAccessService.canAccess (self, linked caregiver, or admin). Add a short comment noting DPDP 2025 alignment (data minimisation, exportable/deletable data, no behavioural ad profiling).",
+    "Users tests: apps/api/src/users/caregiver-access.service.spec.ts — self allowed; admin allowed; caregiver linked to learner allowed; unrelated/unlinked caregiver denied. apps/api/src/users/users.service.spec.ts — linkLearner then canAccess true; createMinorAccount requires a caregiver and auto-links.",
+    "Create apps/api/src/users/users.module.ts (provides UsersService, CaregiverAccessService; declares UsersController, DataRightsController; imports PersistenceModule; exports CaregiverAccessService) and import it in app.module.ts.",
+    "Progress: create apps/api/src/progress/progress.service.ts — getProgress(actor, subjectUserId) and setProgress(actor, subjectUserId, { phaseId, itemKey, status }) where status is 'not-started'|'in-progress'|'completed'; BOTH call CaregiverAccessService.canAccess first and throw ForbiddenException when false; records use the mirrored ProgressRecord shape and go through ProgressRepository. Create progress.controller.ts (GET /api/progress/:userId, PUT /api/progress/:userId) JwtAuthGuard-protected, passing req.user as actor. Create progress.module.ts (imports PersistenceModule + UsersModule for CaregiverAccessService) and import it in app.module.ts.",
+    "Progress test: apps/api/src/progress/progress.service.spec.ts — owner can read and write own progress; a caregiver linked to the learner can read/write the learner's progress; an unrelated user is denied (ForbiddenException) on both read and write."
+  ],
+  "acceptance_criteria": [
+    "RolesGuard allows a request whose user.role is in the @Roles list and denies one that is not; passes through when no roles are required.",
+    "Passwords are stored bcrypt-hashed; validateUser rejects an incorrect password.",
+    "CaregiverAccessService.canAccess returns true for self, admin, and a caregiver linked to the learner, and false for an unlinked actor — and it is the only place this rule is implemented.",
+    "Progress read and write are permitted only for the owner or a linked caregiver/admin; unrelated actors get ForbiddenException.",
+    "There are endpoints to export and to delete a user's data, authorised through CaregiverAccessService.",
+    "From apps/api, npm run build and npm test pass."
+  ],
+  "verification": [
+    "cd apps/api; npm test  (roles.guard.spec, auth.service.spec, caregiver-access.service.spec, users.service.spec, progress.service.spec all pass)",
+    "cd apps/api; npm run build  (expect exit 0)"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

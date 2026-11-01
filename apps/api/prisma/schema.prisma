@@ -1,0 +1,68 @@
+// Prisma schema for the LHD API (PostgreSQL).
+//
+// This schema defines the relational persistence used only when DATABASE_URL is set.
+// `prisma generate` is intentionally NOT wired into build or test — the in-memory
+// repositories cover those paths. Child-data protection is structural: minimal fields,
+// caregiver-mediated minor accounts (isMinor), caregiver links as explicit grants,
+// and cascading erasure to honour DPDP 2025 data-deletion rights.
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  learner
+  parent
+  guardian
+  educator
+  admin
+}
+
+enum ProgressStatus {
+  not_started
+  in_progress
+  completed
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  role         Role
+  isMinor      Boolean  @default(false)
+  displayName  String
+  createdAt    DateTime @default(now())
+
+  caregiverLinks CaregiverLink[] @relation("Caregiver")
+  learnerLinks   CaregiverLink[] @relation("Learner")
+  progress       ProgressRecord[]
+}
+
+model CaregiverLink {
+  id          String @id @default(uuid())
+  caregiverId String
+  learnerId   String
+
+  caregiver User @relation("Caregiver", fields: [caregiverId], references: [id], onDelete: Cascade)
+  learner   User @relation("Learner", fields: [learnerId], references: [id], onDelete: Cascade)
+
+  @@unique([caregiverId, learnerId])
+}
+
+model ProgressRecord {
+  id        String         @id @default(uuid())
+  userId    String
+  phaseId   String
+  itemKey   String
+  status    ProgressStatus
+  updatedAt DateTime       @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, phaseId, itemKey])
+}

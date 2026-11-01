@@ -1,0 +1,28 @@
+{
+  "id": "FEAT-002",
+  "type": "feat",
+  "description": "Content module: read-only loading and serving of curriculum phases. At startup it resolves the content root (repo-relative, overridable by LHD_CONTENT_ROOT), reads packages/content/catalog.json, and loads every referenced phase.json that exists on disk — mirroring tools/pdf/lib.mjs — so phases 02..13 appear automatically as they are authored. Exposes GET /api/phases and GET /api/phases/:idOrSlug. Depends on FEAT-001 (scaffold + mirrored contract).",
+  "status": "pending",
+  "steps": [
+    "Create apps/api/src/content/content.service.ts. On module init (OnModuleInit), resolve contentRoot: if env LHD_CONTENT_ROOT is set use it; else resolve repo root from __dirname (walk up out of apps/api/dist or src to the directory containing packages/content) and join packages/content — follow the resolve pattern in tools/pdf/lib.mjs. Read catalog.json into a Catalog. For each catalog entry in order, if the entry.file exists on disk, read and parse it; defensively validate it against the Phase shape (assert required keys: id, slug, order, title, ageRange, primaryObjective, summary, developmentDomains[], yearPlans[], milestones[], safety[], outcomes[], projects[], appFeatures[], sources[]) and that phase.id === entry.id; log and SKIP any malformed or missing phase rather than throwing. Cache catalog entries and loaded phases in memory.",
+    "Add service methods: getCatalogEntries(): CatalogEntry[] (the catalog list), and getPhase(idOrSlug: string): Phase | null (match by id OR slug against loaded phases).",
+    "Create apps/api/src/content/content.controller.ts with @Controller('phases'): GET '' -> getCatalogEntries(); GET ':idOrSlug' -> getPhase; throw NestJS NotFoundException when null (404).",
+    "Create apps/api/src/content/content.module.ts providing and exporting ContentService (so AiModule can reuse it), and declaring ContentController. Import ContentModule in app.module.ts.",
+    "Add apps/api/src/content/content.service.spec.ts: point the service at the real packages/content via resolved root (or set LHD_CONTENT_ROOT to the repo content dir), init it, assert catalog has 13 entries, assert getPhase('phase-01') and getPhase('0-3-years') both return the phase with id 'phase-01', assert an unauthored/unknown id returns null, and assert a malformed phase file is skipped (can be simulated by pointing at a temp dir with a bad file, or by unit-testing the validate helper directly).",
+    "Add apps/api/src/content/content.controller.spec.ts using a mocked ContentService: GET phases returns the entry list; GET ':idOrSlug' returns a phase; unknown id throws NotFoundException (404)."
+  ],
+  "acceptance_criteria": [
+    "GET /api/phases returns the catalog entries (13 from catalog.json).",
+    "GET /api/phases/phase-01 and GET /api/phases/0-3-years both return the full phase with id phase-01.",
+    "GET /api/phases/:idOrSlug with an unknown id responds 404 (NotFoundException).",
+    "The loader reads catalog.json at runtime and skips phases not present on disk; it does not hardcode a phase list.",
+    "Malformed phase JSON is skipped defensively, not fatal.",
+    "From apps/api, npm run build and npm test pass."
+  ],
+  "verification": [
+    "cd apps/api; npm test  (content.service.spec and content.controller.spec pass)",
+    "cd apps/api; npm run build  (expect exit 0)"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}
