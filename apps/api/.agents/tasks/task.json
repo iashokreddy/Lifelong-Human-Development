@@ -1,7 +1,7 @@
 {
   "task_id": "task-lhd-api-backend",
   "task_description": "Build the NestJS modular-monolith backend at apps/api for the Lifelong Human Development platform: content (read-only phase serving), auth (JWT + roles), users (caregiver<->learner links), progress (ownership-scoped), and ai (RAG over vetted curriculum with a support-never-replace guardrail). Persistence via a repository abstraction with an in-memory default and a Prisma/Postgres impl selected by DATABASE_URL, so build and tests never need a live DB. Only create/modify files under apps/api plus additive root package.json scripts.",
-  "status": "pending",
+  "status": "completed",
   "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003", "FEAT-004"],
   "blocked_reason": null
 }
