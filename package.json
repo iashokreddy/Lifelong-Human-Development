@@ -15,7 +15,9 @@
     "test:api": "npm --workspace @lhd/api test",
     "dev:api": "npm --workspace @lhd/api run start:dev",
     "dev:web": "npm --workspace @lhd/web run dev",
-    "test:web": "npm --workspace @lhd/web test"
+    "test:web": "npm --workspace @lhd/web test",
+    "test:mobile": "npm --workspace @lhd/mobile test",
+    "start:mobile": "npm --workspace @lhd/mobile run start"
   },
   "engines": {
     "node": ">=20"
