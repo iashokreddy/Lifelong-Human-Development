@@ -13,6 +13,11 @@ export class InMemoryUserRepository implements UserRepository {
     return { ...created };
   }
 
+  async save(user: User): Promise<User> {
+    this.users.set(user.id, { ...user });
+    return { ...user };
+  }
+
   async findById(id: string): Promise<User | null> {
     const found = this.users.get(id);
     return found ? { ...found } : null;

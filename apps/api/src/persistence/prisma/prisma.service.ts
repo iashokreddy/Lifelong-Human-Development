@@ -13,6 +13,7 @@ export interface PrismaModelDelegate {
   create(args: { data: unknown }): Promise<unknown>;
   findUnique(args: { where: unknown }): Promise<unknown>;
   findMany(args?: { where?: unknown }): Promise<unknown[]>;
+  update(args: { where: unknown; data: unknown }): Promise<unknown>;
   upsert(args: { where: unknown; create: unknown; update: unknown }): Promise<unknown>;
   delete(args: { where: unknown }): Promise<unknown>;
   deleteMany(args?: { where?: unknown }): Promise<{ count: number }>;

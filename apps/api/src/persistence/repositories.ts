@@ -31,6 +31,8 @@ export interface CaregiverLink {
 /** Data-access for users. Keeps data minimisation in mind — no extra PII. */
 export interface UserRepository {
   create(user: NewUser): Promise<User>;
+  /** Persist an existing user (by id), e.g. a profile edit. Returns the saved user. */
+  save(user: User): Promise<User>;
   findById(id: string): Promise<User | null>;
   findByEmail(email: string): Promise<User | null>;
   list(): Promise<User[]>;

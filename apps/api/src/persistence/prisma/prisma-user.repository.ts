@@ -11,6 +11,11 @@ export class PrismaUserRepository implements UserRepository {
     return (await this.prisma.db.user.create({ data: user })) as User;
   }
 
+  async save(user: User): Promise<User> {
+    const { id, ...data } = user;
+    return (await this.prisma.db.user.update({ where: { id }, data })) as User;
+  }
+
   async findById(id: string): Promise<User | null> {
     return (await this.prisma.db.user.findUnique({ where: { id } })) as User | null;
   }

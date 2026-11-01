@@ -2,6 +2,9 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { PersistenceModule } from './persistence/persistence.module';
 import { ContentModule } from './content/content.module';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
+import { ProgressModule } from './progress/progress.module';
 
 /**
  * Root module for the LHD modular monolith.
@@ -15,6 +18,9 @@ import { ContentModule } from './content/content.module';
     ConfigModule.forRoot({ isGlobal: true }),
     PersistenceModule,
     ContentModule,
+    AuthModule,
+    UsersModule,
+    ProgressModule,
   ],
 })
 export class AppModule {}
