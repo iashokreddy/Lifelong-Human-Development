@@ -1,0 +1,30 @@
+{
+  "id": "FEAT-002",
+  "type": "feat",
+  "description": "Build the full web UI: global accessible layout and calm theme, shared components, and all four routes (/ home journey timeline, /phases grid, /phases/[idOrSlug] full phase view rendering every Phase section, /assistant). Copy throughout reflects the non-negotiable philosophy (teach HOW to think; the platform strengthens and never replaces parents/teachers/doctors; health/safety/wellbeing routes to humans). Includes a component test asserting the phase view renders every major section with readable domain labels. Depends on FEAT-001 (API client, domain labels, scaffold).",
+  "status": "pending",
+  "steps": [
+    "Replace apps/web/app/layout.tsx with the real root layout: semantic html/body, a skip-to-content link, a <header> containing the platform name and the guiding principle (teach HOW to think, not what), a <main id> wrapper, and a <footer> restating the 'strengthens and never replaces parents, teachers, doctors or human relationships' commitment. Import apps/web/app/globals.css. Exactly one h1 belongs to each page, not the layout (use a p/role in header).",
+    "Create apps/web/app/globals.css: a calm, readable theme using CSS custom properties (background, surface, text, accent), readable base font-size/line-height, :focus-visible outline styles, and WCAG-sufficient contrast. No network-dependent font/design deps (system font stack).",
+    "Create shared components under apps/web/components with CSS modules: PrincipleBanner.tsx (prominent 'supports, never replaces' + how-to-think message), PhaseTimeline.tsx (ordered visual timeline of CatalogEntry[] from 0 to 40+, each node a link to /phases/<slug or id>), PhaseCard.tsx (order, ageLabel, title, primaryObjective, link), and EmptyState.tsx (friendly retry/empty message used when a fetch returns { ok:false }). All keyboard-navigable with semantic elements (nav/ol/li, a).",
+    "Build apps/web/app/page.tsx (home): server component. Call getPhases(); if ok render the vision intro (lifelong journey), a prominent PrincipleBanner, and the PhaseTimeline across all 13 phases; if not ok render EmptyState. One h1. Add apps/web/app/page.module.css.",
+    "Build apps/web/app/phases/page.tsx (index): server component. Call getPhases(); render a grid of PhaseCard for every entry, or EmptyState on error. One h1. Add apps/web/app/phases/page.module.css.",
+    "Build apps/web/app/phases/[idOrSlug]/page.tsx (detail): server component reading params.idOrSlug. Call getPhase(idOrSlug); on { ok:false } render a friendly not-found/empty state (do not throw). On success render a PhaseView component (apps/web/components/PhaseView.tsx + .module.css) that shows EVERY section of the Phase: title (h1), age range (ageRange.label), primary objective, summary, guidingPrinciple when present, development domains (map domain via labelForDomain from lib/domain-labels.ts, show focus), year plans (label + objectives + capabilities), activities.daily and activities.weekly (title, description, materials when present), parentGuidance when present (topic + guidance), milestones (area, description, typicalBy), safety (topic + guidance), outcomes (list), projects (title, description, skillsPractised), appFeatures (feature, userJourney, audience), and sources rendered as clickable <a href target=_blank rel=noopener> links. Compute previous/next from the catalog order (fetch getPhases() to resolve neighbours) and render prev/next navigation. Use semantic sections each with a heading.",
+    "Build apps/web/app/assistant/page.tsx: a client component with a labelled <form> (label + textarea + submit) that calls askAssistant(question, token?). Render the returned answer and citations (each citation linking to /phases/<phaseId>). Include clear, reassuring copy that health/safety/wellbeing questions are routed to a human and the assistant never replaces a parent/teacher/doctor; when routedToHuman is true, present that message prominently. Handle the JWT-guarded endpoint gracefully: if no token, still render the page and show the routing/reassurance copy and any { ok:false } error as a calm message (never crash). Add apps/web/app/assistant/page.module.css. Add a nav link to /assistant and /phases in the layout header.",
+    "Create apps/web/components/__tests__/PhaseView.test.tsx: build an in-test sample Phase object mirroring phase-01's shape (title containing 'Foundations', one of each nested item). Render PhaseView and assert each major section appears: a development domain shows its human label (e.g. 'Physical & motor') NOT the raw key 'physical-and-motor'; a year-plan objective text; a daily activity title; a parentGuidance topic; a milestone description; a safety topic; an outcome; a project title; an app feature; and a source rendered as a link with the correct href. Assert accessible structure (a single h1)."
+  ],
+  "acceptance_criteria": [
+    "apps/web 'npm run build' completes 0 errors with the API NOT running (every page renders an empty-state path instead of throwing on fetch failure).",
+    "apps/web 'npm run lint' reports no errors.",
+    "Routes exist and render: / (vision + 13-phase timeline + principle), /phases (grid), /phases/[idOrSlug] (all Phase sections + prev/next), /assistant (question form + grounded answer/citations + human-routing copy).",
+    "PhaseView.test.tsx passes and proves every major Phase section renders with readable domain labels and working source links.",
+    "The 'strengthens and never replaces' commitment and the how-to-think philosophy appear in the UI (layout + home + assistant)."
+  ],
+  "verification": [
+    "cd apps/web; npm run build  (expect: 0 errors, API not running)",
+    "cd apps/web; npm run lint  (expect: no errors)",
+    "cd apps/web; npm test  (expect: all tests pass, including PhaseView.test.tsx)"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}
