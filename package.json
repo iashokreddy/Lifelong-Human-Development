@@ -16,6 +16,7 @@
     "dev:api": "npm --workspace @lhd/api run start:dev",
     "dev:web": "npm --workspace @lhd/web run dev",
     "test:web": "npm --workspace @lhd/web test",
+    "e2e:web": "npm --workspace @lhd/web run e2e",
     "test:mobile": "npm --workspace @lhd/mobile test",
     "start:mobile": "npm --workspace @lhd/mobile run start"
   },
