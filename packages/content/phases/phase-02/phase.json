@@ -1,0 +1,125 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-02",
+  "slug": "3-6-years",
+  "order": 2,
+  "title": "Phase 02 — Curiosity & Communication (3–6 years)",
+  "ageRange": { "label": "3–6 years", "startYears": 3, "endYears": 6, "indicative": true },
+  "primaryObjective": "Curiosity, communication, and independence — the child asks 'why', expresses ideas, and does more for themselves.",
+  "summary": "These years turn a curious toddler into a communicating, questioning young child. Play is the serious work of this stage: pretend, building, movement, and story are how the child learns to think, negotiate, and make sense of the world. The platform supports caregivers and early educators in protecting unstructured play, answering 'why' with wonder rather than closed answers, and nurturing independence and kindness.",
+  "guidingPrinciple": "Honour the question. When a child asks 'why', the goal is not to hand over an answer but to explore the question together — teaching how to wonder, not what to conclude.",
+  "developmentDomains": [
+    { "domain": "play-exploration-creativity", "focus": "Rich pretend play, building, drawing, and open-ended exploration as the main way the child learns and reasons." },
+    { "domain": "communication-and-language", "focus": "Growing vocabulary, storytelling, questions, listening, and the first links between sounds, letters, and meaning through play." },
+    { "domain": "physical-and-motor", "focus": "Running, jumping, balancing, climbing, and fine-motor control for drawing, cutting, buttoning, and building." },
+    { "domain": "emotional-and-resilience", "focus": "Naming feelings, waiting and taking turns, recovering from frustration, and early self-regulation." },
+    { "domain": "respect-empathy-relationships", "focus": "Sharing, cooperating, reading others' feelings, and the beginnings of fairness and kindness." },
+    { "domain": "health-hygiene-self-care", "focus": "Independent handwashing, dressing, toileting, tidying up, and simple healthy-eating habits." },
+    { "domain": "scientific-thinking", "focus": "Noticing, predicting, and testing in everyday play — sinking and floating, mixing, counting, and sorting." },
+    { "domain": "safety-and-awareness", "focus": "Learning body safety, trusted adults, road and water awareness, and who to ask for help." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 3–4",
+      "objectives": [
+        "Expand language into full sentences, questions, and simple storytelling.",
+        "Protect long stretches of unstructured, child-led pretend play.",
+        "Build independence in self-care: dressing, handwashing, tidying away toys.",
+        "Support turn-taking and recovering from big feelings with a calm adult nearby."
+      ],
+      "capabilities": [
+        "Speaks in full sentences and asks many 'why' and 'what' questions.",
+        "Engages in rich pretend play and simple cooperative games.",
+        "Draws recognisable shapes and begins to hold a pencil with control.",
+        "Dresses with little help and manages basic self-care routines."
+      ]
+    },
+    {
+      "label": "Age 4–5",
+      "objectives": [
+        "Encourage longer stories, retelling events, and explaining their thinking.",
+        "Introduce playful early literacy and numeracy through games, songs, and real life.",
+        "Grow cooperative play, negotiation, and simple problem-solving with peers.",
+        "Build everyday scientific curiosity: predict, try, and talk about what happened."
+      ],
+      "capabilities": [
+        "Tells a short story with a beginning, middle, and end.",
+        "Recognises some letters and numbers and counts small sets of objects.",
+        "Plays cooperatively, takes turns, and begins to resolve small conflicts.",
+        "Makes simple predictions and notices cause and effect in play."
+      ]
+    },
+    {
+      "label": "Age 5–6",
+      "objectives": [
+        "Support early reading and writing interest without pressure or testing.",
+        "Deepen empathy, fairness, and responsibility through group play and chores.",
+        "Encourage planning in play (building, projects) and finishing what they start.",
+        "Strengthen body safety, road and water awareness, and asking for help."
+      ],
+      "capabilities": [
+        "Reads or recognises some words and writes their own name.",
+        "Follows multi-step instructions and plans simple projects.",
+        "Shows empathy, understands fairness, and helps with family tasks.",
+        "Explains rules of safety and names trusted adults to go to for help."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Why-together", "description": "When your child asks 'why', resist the quick answer. Ask 'what do you think?', explore it together, and let the question lead to another.", "domain": "scientific-thinking" },
+      { "title": "Story time, two ways", "description": "Read a story and also invite the child to tell you one. Both build language, imagination, and sequencing.", "domain": "communication-and-language", "materials": ["picture books"] },
+      { "title": "Helper of the day", "description": "Give one real, age-sized job — setting the table, sorting socks, watering a plant — to build competence and belonging.", "domain": "practical-life-skills" },
+      { "title": "Big-body play", "description": "Time to run, climb, balance, and jump to develop coordination, confidence, and self-regulation.", "domain": "physical-and-motor" }
+    ],
+    "weekly": [
+      { "title": "Kitchen science", "description": "Explore sinking and floating, mixing colours, or dissolving sugar — predict, try, and talk about what happened.", "domain": "scientific-thinking", "materials": ["bowls", "water", "household items"] },
+      { "title": "Build and tell", "description": "Build something from blocks or recycled boxes, then explain how it works and what it is for.", "domain": "play-exploration-creativity", "materials": ["blocks", "recycled boxes", "tape"] },
+      { "title": "Feelings check-in", "description": "Name feelings using faces or a simple chart, and talk about a moment that felt big this week.", "domain": "emotional-and-resilience", "materials": ["feelings chart"] }
+    ]
+  },
+  "parentGuidance": [
+    { "topic": "Play is learning", "guidance": "Unstructured, child-led play is not a break from learning — it is how thinking, language, and self-control are built at this age. Protect it from over-scheduling and screens." },
+    { "topic": "Answer questions with questions", "guidance": "When your child asks 'why', you grow a thinker by wondering aloud together rather than always giving the final answer. It is fine to say 'let's find out'." },
+    { "topic": "Independence takes patience", "guidance": "Letting a child dress themselves or pour their own water is slower but builds confidence and capability. Allow extra time rather than doing it for them." },
+    { "topic": "When to seek help", "guidance": "If you are worried about speech, hearing, movement, or social development, talk to your paediatrician or an early-childhood professional. The platform supports your judgement; it never replaces it." }
+  ],
+  "milestones": [
+    { "area": "Language", "description": "Speaks in full sentences and is understood by others most of the time", "typicalBy": "by 4 years", "sourceRef": "cdc-milestones" },
+    { "area": "Cognitive", "description": "Engages in extended pretend play and simple problem-solving", "typicalBy": "by 4 years", "sourceRef": "cdc-milestones" },
+    { "area": "Social-emotional", "description": "Plays cooperatively and begins to take turns and share", "typicalBy": "by 5 years", "sourceRef": "cdc-milestones" },
+    { "area": "Fine motor", "description": "Draws recognisable shapes and writes some letters or their name", "typicalBy": "by 6 years", "sourceRef": "cdc-milestones" },
+    { "area": "Early learning", "description": "Shows interest in letters, numbers, and the meaning of print", "typicalBy": "by 6 years", "sourceRef": "unesco-education" }
+  ],
+  "safety": [
+    { "topic": "Body safety and consent", "guidance": "Teach correct names for body parts, that their body is their own, and that they can say no and tell a trusted adult. Keep the conversation calm and ongoing." },
+    { "topic": "Road and water awareness", "guidance": "Practise holding hands near roads, stopping at the kerb, and never going near water without a trusted adult present." },
+    { "topic": "Who to ask for help", "guidance": "Help the child name a few trusted adults and practise what to do if lost or scared. Reassure them that asking for help is always okay." },
+    { "topic": "Health questions route to professionals", "guidance": "For fevers, injuries, speech or developmental concerns, contact a doctor or early-childhood professional. The platform offers general guidance, not diagnosis or treatment." }
+  ],
+  "outcomes": [
+    "The child communicates clearly in sentences and tells simple stories.",
+    "The child asks and explores questions rather than only seeking fixed answers.",
+    "The child manages everyday self-care and helps with simple family tasks.",
+    "The child plays cooperatively, takes turns, and shows early empathy and fairness.",
+    "The child can name trusted adults and basic safety rules for home, road, and water."
+  ],
+  "projects": [
+    { "title": "My own picture story", "description": "The child draws and 'writes' a short three-page story and tells it aloud to the family, practising sequencing and imagination.", "skillsPractised": ["storytelling", "sequencing", "fine-motor"] },
+    { "title": "Grow a seed", "description": "Plant a bean or herb, water it, and observe and draw its changes over days to build patience and scientific noticing.", "skillsPractised": ["observation", "responsibility", "scientific-thinking"] },
+    { "title": "Build-it challenge", "description": "Build a bridge or tower from blocks or recycled boxes that can hold a small toy, testing and improving the design.", "skillsPractised": ["problem-solving", "design", "perseverance"] }
+  ],
+  "appFeatures": [
+    { "feature": "Play-prompt of the day", "userJourney": "A parent opens the app to one open-ended play idea and one 'wonder question' to explore with their child using things they already have at home.", "audience": "parent" },
+    { "feature": "Milestone awareness, gently", "userJourney": "A caregiver reviews supportive milestone context for 3–6 years with a clear, non-alarming prompt to consult a professional if concerned.", "audience": "parent" },
+    { "feature": "Early-educator activity packs", "userJourney": "An early-years educator browses play-based activities by domain and prints or saves a week of hands-on ideas for a small group.", "audience": "educator" },
+    { "feature": "Body-safety conversation guide", "userJourney": "A guardian follows a calm, age-appropriate script to talk about body safety and trusted adults, with a reminder that serious concerns go to professionals.", "audience": "guardian" }
+  ],
+  "sources": [
+    { "id": "cdc-milestones", "title": "Developmental Milestones (Learn the Signs. Act Early.)", "org": "US CDC", "url": "https://www.cdc.gov/act-early/milestones/" },
+    { "id": "who-ncf", "title": "Nurturing Care Framework for Early Childhood Development", "org": "World Health Organization", "url": "https://www.who.int/publications/i/item/9789241514064" },
+    { "id": "unicef-ecd", "title": "Early Childhood Development & Parenting", "org": "UNICEF India", "url": "https://www.unicef.org/india/ecd-parenting" },
+    { "id": "harvard-serve-return", "title": "Serve and Return", "org": "Harvard Center on the Developing Child", "url": "https://developingchild.harvard.edu/resource-guides/guide-to-serve-and-return/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" }
+  ]
+}

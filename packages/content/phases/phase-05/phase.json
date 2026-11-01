@@ -1,0 +1,121 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-05",
+  "slug": "12-15-years",
+  "order": 5,
+  "title": "Phase 05 — Identity & Ideas (12–15 years)",
+  "ageRange": { "label": "12–15 years", "startYears": 12, "endYears": 15, "indicative": true },
+  "primaryObjective": "Identity, science, technology, and ethics — the teen explores who they are and how to use knowledge responsibly.",
+  "summary": "Adolescence brings a surge in abstract thinking, identity, and the drive for autonomy. The teen can grasp science and technology deeply, debate ethics, and start building real things. The work of this stage is channelling that energy: forming an authentic identity, thinking scientifically and ethically, and using technology to create rather than merely consume. The platform supports teens, families, and educators with real projects, honest conversations about values, and strong attention to wellbeing and online safety.",
+  "guidingPrinciple": "Help teens build an identity grounded in their own thinking and values — to question what they are told, understand the world, and use their growing power to create good rather than follow the crowd.",
+  "developmentDomains": [
+    { "domain": "critical-thinking-problem-solving", "focus": "Abstract and systems thinking, evaluating arguments, handling complexity, and reasoning about trade-offs." },
+    { "domain": "scientific-thinking", "focus": "Deeper experimentation, data, models, and understanding how scientific knowledge is built and revised." },
+    { "domain": "technology-and-digital", "focus": "Creating with technology — coding, media, making — and understanding algorithms, data, and their social effects." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Reasoning about right and wrong, rights and responsibilities, civic life, and the ethics of technology and information." },
+    { "domain": "emotional-and-resilience", "focus": "Identity, self-worth, managing stress and emotion, and coping with academic and social pressure." },
+    { "domain": "respect-empathy-relationships", "focus": "Deeper friendships, respectful relationships, consent, boundaries, and valuing diversity of people and views." },
+    { "domain": "financial-and-professional", "focus": "Earning, saving, and budgeting basics, and first awareness of interests that could become a path." },
+    { "domain": "contribution-to-society", "focus": "Finding issues they care about and taking real action in their school or community." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 12–13",
+      "objectives": [
+        "Explore interests and strengths through real projects, not labels.",
+        "Deepen scientific thinking with data and models they build themselves.",
+        "Begin creating with technology rather than only consuming it.",
+        "Build emotional vocabulary and healthy ways to handle stress."
+      ],
+      "capabilities": [
+        "Chooses and pursues a project based on a genuine interest.",
+        "Collects and interprets simple data and builds a basic model.",
+        "Makes a digital artefact — code, media, or design — not just views one.",
+        "Names emotions and uses at least one healthy coping strategy."
+      ]
+    },
+    {
+      "label": "Age 13–14",
+      "objectives": [
+        "Evaluate complex arguments and the ethics behind real decisions.",
+        "Understand how algorithms and data shape what they see online.",
+        "Practise respectful relationships, consent, and boundaries.",
+        "Manage money earned or given and plan toward a goal."
+      ],
+      "capabilities": [
+        "Weighs trade-offs and ethical sides of a real issue.",
+        "Explains in simple terms how recommendation systems and data work.",
+        "Communicates boundaries and respects others' consent and differences.",
+        "Keeps a simple budget and saves toward something meaningful."
+      ]
+    },
+    {
+      "label": "Age 14–15",
+      "objectives": [
+        "Lead a substantial project from idea to finished result.",
+        "Form reasoned personal values while staying open to other views.",
+        "Take real action on a community or social issue they care about.",
+        "Explore possible future paths through doing, not just reading about them."
+      ],
+      "capabilities": [
+        "Plans and delivers a multi-week project and reflects honestly on it.",
+        "Explains their values with reasons and listens to challenge them.",
+        "Organises or joins a real initiative that helps others.",
+        "Connects current interests to possible future directions."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Think it through", "description": "Take one claim or decision from the day and map the reasons for and against before concluding — a daily habit of reasoning.", "domain": "critical-thinking-problem-solving" },
+      { "title": "Create, don't just scroll", "description": "Spend part of screen time making something — writing, code, design, music — turning consumption into creation.", "domain": "technology-and-digital" }
+    ],
+    "weekly": [
+      { "title": "Ethics in the news", "description": "Discuss a real ethical dilemma from science or technology (privacy, AI, environment) and argue more than one position.", "domain": "ethics-responsibility-citizenship" },
+      { "title": "Build or experiment", "description": "Work on a maker, coding, or science project, testing and improving it based on real results.", "domain": "scientific-thinking", "materials": ["computer or maker materials", "notebook"] },
+      { "title": "Money and goals check-in", "description": "Review earning, saving, and spending against a personal goal and adjust the plan.", "domain": "financial-and-professional" }
+    ]
+  },
+  "parentGuidance": [
+    { "topic": "Respect growing autonomy", "guidance": "Teens need room to form their own identity. Offer guidance and clear boundaries, but let them make and own real decisions so they learn to think for themselves." },
+    { "topic": "Stay connected, stay curious", "guidance": "Keep talking without judgement about friends, feelings, and online life. Teens who feel heard are more likely to come to you when it matters." },
+    { "topic": "Wellbeing comes first", "guidance": "Watch for lasting changes in mood, sleep, eating, or withdrawal. If you are concerned about mental health, involve a doctor or counsellor. The platform never replaces professional care." },
+    { "topic": "Model values, don't just preach them", "guidance": "Teens detect hypocrisy quickly. Live the honesty, respect, and responsibility you hope to see, and admit when you get it wrong." }
+  ],
+  "milestones": [
+    { "area": "Cognitive", "description": "Reasons abstractly and weighs trade-offs in complex situations", "typicalBy": "by 15 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Digital", "description": "Understands how data and algorithms shape online experiences", "typicalBy": "by 15 years", "sourceRef": "unesco-education" },
+    { "area": "Social-emotional", "description": "Explores identity and forms reasoned personal values", "typicalBy": "by 15 years", "sourceRef": "who-adolescent" },
+    { "area": "Civic", "description": "Takes real action on an issue they care about", "typicalBy": "by 15 years", "sourceRef": "oecd-learning-compass" }
+  ],
+  "safety": [
+    { "topic": "Online safety and footprint", "guidance": "Understand that posts, images, and messages can spread and persist. Protect privacy, think before sharing, and know how to report and block harmful contact." },
+    { "topic": "Mental health and help-seeking", "guidance": "Stress and mood swings are normal, but persistent distress is not something to face alone. Talk to a trusted adult or professional. In crisis, contact local emergency or crisis services immediately." },
+    { "topic": "Healthy relationships and consent", "guidance": "Respect, consent, and boundaries matter in every relationship. No one should be pressured. Unsafe or abusive situations should be shared with a trusted adult or professional." },
+    { "topic": "Critical of what you consume", "guidance": "Be alert to misinformation, extreme content, and pressure to conform online. Pause, verify, and step back. The platform supports your judgement and points you to people, not away from them." }
+  ],
+  "outcomes": [
+    "The teen pursues real projects driven by genuine interests.",
+    "The teen thinks scientifically and reasons about ethics and trade-offs.",
+    "The teen creates with technology and understands its social effects.",
+    "The teen forms reasoned values while respecting different views.",
+    "The teen manages basic money and takes real action on an issue they care about."
+  ],
+  "projects": [
+    { "title": "Build-a-thing capstone", "description": "Design and build a real project — an app, device, campaign, or artwork — over several weeks, documenting the process, failures, and improvements.", "skillsPractised": ["project-management", "technical-making", "reflection"] },
+    { "title": "Community action project", "description": "Identify a local issue, research it, plan an action, carry it out with others, and measure the difference it made.", "skillsPractised": ["civic-action", "collaboration", "planning"] },
+    { "title": "Ethics-of-tech study", "description": "Investigate an ethical question about a technology (privacy, AI, screens), gather evidence and viewpoints, and present a reasoned, balanced conclusion.", "skillsPractised": ["ethical-reasoning", "research", "argumentation"] }
+  ],
+  "appFeatures": [
+    { "feature": "Interest-driven project studio", "userJourney": "A learner picks an interest, scopes a real project with milestones, and tracks progress, with mentor or teacher check-ins built in.", "audience": "learner" },
+    { "feature": "Reasoning & debate arena", "userJourney": "A learner works through ethical and scientific dilemmas, argues multiple sides, and reflects on how their view changed and why.", "audience": "learner" },
+    { "feature": "Wellbeing check-in with real signposting", "userJourney": "A learner does a light self check-in; if responses suggest distress, the app clearly signposts trusted adults and professional help rather than trying to counsel them.", "audience": "learner" },
+    { "feature": "Educator project rubrics", "userJourney": "An educator sets up interest-based projects and assesses process and thinking, not just final answers, with discussion prompts.", "audience": "educator" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-adolescent", "title": "Adolescent Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/adolescent-health" },
+    { "id": "unicef-ecd", "title": "For Every Child — Adolescent Development", "org": "UNICEF", "url": "https://www.unicef.org" }
+  ]
+}

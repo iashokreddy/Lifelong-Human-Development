@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-09",
+  "slug": "24-28-years",
+  "order": 9,
+  "title": "Phase 09 — Innovation & Leadership (24–28 years)",
+  "ageRange": { "label": "24–28 years", "startYears": 24, "endYears": 28, "indicative": true },
+  "primaryObjective": "Innovation, entrepreneurship, and leadership — the adult creates new value and leads people and ideas.",
+  "summary": "In the mid-to-late twenties the adult turns expertise into creation and leadership. The focus is innovation — building new products, ventures, research directions, or ways of working — and leading people toward shared goals. This stage blends creativity, risk-taking, and responsibility: taking initiative, building and leading teams, managing resources, and holding to ethics while moving fast. The platform supports the autonomous adult with leadership development, networks, and tools, always reinforcing human mentorship rather than replacing it.",
+  "guidingPrinciple": "Create value and lift others. True leadership is not control but enabling people and ideas to flourish, and innovation is worth most when it serves real human needs.",
+  "developmentDomains": [
+    { "domain": "innovation-entrepreneurship-leadership", "focus": "Creating new products, ventures, and ideas, and leading teams and initiatives toward shared goals." },
+    { "domain": "financial-and-professional", "focus": "Business and financial acumen, managing resources, and growing a career or enterprise sustainably." },
+    { "domain": "critical-thinking-problem-solving", "focus": "Strategic problem-solving, decision-making under uncertainty, and learning fast from results." },
+    { "domain": "respect-empathy-relationships", "focus": "Leading with empathy, building and motivating teams, and navigating conflict and difference." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Responsible innovation, ethical leadership, and accountability for impact on people and society." },
+    { "domain": "emotional-and-resilience", "focus": "Resilience through risk and failure, managing pressure, and sustaining wellbeing while leading." },
+    { "domain": "technology-and-digital", "focus": "Using and shaping technology to build and scale, with awareness of its social consequences." },
+    { "domain": "contribution-to-society", "focus": "Building ventures and solutions that create genuine value and address real human needs." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 24–26 (Creating)",
+      "objectives": [
+        "Turn expertise into new products, ventures, or research directions.",
+        "Take ownership of resources, budgets, and real outcomes.",
+        "Build and motivate a small team around a shared goal.",
+        "Learn fast from experiments, launches, and failures."
+      ],
+      "capabilities": [
+        "Takes an idea from concept to a working, tested reality.",
+        "Manages a budget and resources toward a measurable outcome.",
+        "Recruits and motivates a small team and delegates well.",
+        "Runs experiments and adjusts quickly based on evidence."
+      ]
+    },
+    {
+      "label": "Age 26–28 (Leading)",
+      "objectives": [
+        "Lead larger initiatives and set direction for others.",
+        "Make sound strategic decisions under uncertainty.",
+        "Lead ethically and take responsibility for impact.",
+        "Mentor and develop others as they grow."
+      ],
+      "capabilities": [
+        "Sets a clear direction others can follow and contribute to.",
+        "Decides well with incomplete information and owns the results.",
+        "Holds to ethics and accountability under commercial pressure.",
+        "Coaches team members and helps them grow."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Decide and own it", "description": "Make a real decision with incomplete information, record your reasoning, and later review how it turned out.", "domain": "critical-thinking-problem-solving" },
+      { "title": "Lift someone", "description": "Spend time developing a team member or peer — feedback, a stretch task, or unblocking them — practising servant leadership.", "domain": "respect-empathy-relationships" }
+    ],
+    "weekly": [
+      { "title": "Build and test an idea", "description": "Advance a venture or innovation with a concrete experiment and real user or market feedback.", "domain": "innovation-entrepreneurship-leadership" },
+      { "title": "Strategy and resources review", "description": "Review progress, finances, and priorities, and decide where to focus next.", "domain": "financial-and-professional" },
+      { "title": "Impact and ethics check", "description": "Ask who your work affects and whether it is creating genuine value responsibly.", "domain": "ethics-responsibility-citizenship" }
+    ]
+  },
+  "milestones": [
+    { "area": "Innovation", "description": "Takes an idea from concept to a working, tested reality", "typicalBy": "by 28 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Leadership", "description": "Leads and motivates a team toward a shared goal", "typicalBy": "by 28 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Financial", "description": "Manages budgets and resources toward measurable outcomes", "typicalBy": "by 28 years", "sourceRef": "unesco-education" },
+    { "area": "Wellbeing", "description": "Sustains resilience and wellbeing through risk and setbacks", "typicalBy": "by 28 years", "sourceRef": "who-mental-health" }
+  ],
+  "safety": [
+    { "topic": "Wellbeing while leading", "guidance": "Leadership and risk carry stress that can harm health. Protect rest and relationships, and seek professional support for persistent anxiety, depression, or burnout. In crisis, contact local emergency or crisis services immediately." },
+    { "topic": "Responsible innovation", "guidance": "Weigh the human and social impact of what you build, including privacy, safety, and fairness. Move fast without harming people, and seek expert and legal advice where impact is significant." },
+    { "topic": "Financial and legal risk", "guidance": "Ventures involve real financial and legal risk. Understand liabilities and contracts and consult qualified professionals rather than relying on the platform for legal or financial advice." },
+    { "topic": "Ethical leadership", "guidance": "Lead with honesty and care for people's wellbeing. Never pressure a team into unsafe, unethical, or illegal action; protect those who raise concerns." }
+  ],
+  "outcomes": [
+    "The adult turns expertise into new products, ventures, or directions.",
+    "The adult leads and motivates teams toward shared goals.",
+    "The adult decides well under uncertainty and owns the results.",
+    "The adult innovates responsibly, weighing human and social impact.",
+    "The adult mentors others and sustains their own wellbeing."
+  ],
+  "projects": [
+    { "title": "Launch a venture or initiative", "description": "Build and launch a real venture, product, or initiative, managing resources, team, and risk, and learning from results.", "skillsPractised": ["entrepreneurship", "leadership", "resource-management"] },
+    { "title": "Lead a cross-functional project", "description": "Lead a team across disciplines to deliver a significant outcome, handling strategy, delegation, and conflict.", "skillsPractised": ["leadership", "strategy", "collaboration"] },
+    { "title": "Responsible-innovation case", "description": "Take an innovation you are building and assess its impact on people and society, adjusting the design to create value responsibly.", "skillsPractised": ["ethical-reasoning", "impact-analysis", "design"] }
+  ],
+  "appFeatures": [
+    { "feature": "Venture-building toolkit", "userJourney": "A learner moves an idea through validation, build, and launch with templates, experiments, and milestone tracking.", "audience": "learner" },
+    { "feature": "Leadership development path", "userJourney": "A learner builds leadership skills through real scenarios, feedback, and reflection, with human mentors reinforced as essential.", "audience": "learner" },
+    { "feature": "Mentor network with safeguards", "userJourney": "A learner connects with experienced mentors and peers for guidance, with the platform complementing rather than replacing human advice.", "audience": "learner" },
+    { "feature": "Responsible-innovation checklist", "userJourney": "A learner assesses the human and social impact of what they build and is prompted to seek expert, legal, and ethical input for significant decisions.", "audience": "learner" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-mental-health", "title": "Mental Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/mental-health" }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-01",
+  "slug": "0-3-years",
+  "order": 1,
+  "title": "Phase 01 — Foundations (0–3 years)",
+  "ageRange": { "label": "0–3 years", "startYears": 0, "endYears": 3, "indicative": true },
+  "primaryObjective": "Attachment, safety, and sensory exploration — a secure base from which the child explores the world.",
+  "summary": "The first three years build the foundation for everything that follows. Through responsive, loving care the child develops secure attachment, a sense of safety, and the drive to explore. Learning here is not academic: it is sensory, physical, relational, and playful. The caregiver is the primary 'application' — the platform's role is to guide and support the caregiver in creating rich, safe opportunities for the child to develop.",
+  "guidingPrinciple": "Responsive, warm interaction — serve and return — is the engine of early development. The platform supports the caregiver; it never replaces the relationship.",
+  "developmentDomains": [
+    { "domain": "physical-and-motor", "focus": "Gross and fine motor development: head control, rolling, sitting, crawling, walking, climbing, grasping, scribbling, stacking." },
+    { "domain": "safety-and-awareness", "focus": "Creating a safe environment and building the child's earliest sense of a secure base and trusted adults." },
+    { "domain": "health-hygiene-self-care", "focus": "Feeding, sleep, nutrition, handwashing habits, and the first steps of self-feeding and dressing." },
+    { "domain": "play-exploration-creativity", "focus": "Sensory play, cause-and-effect toys, imitation, and open-ended exploration of objects and spaces." },
+    { "domain": "communication-and-language", "focus": "Babbling, first words, naming, back-and-forth 'conversation', songs, and shared book-looking." },
+    { "domain": "emotional-and-resilience", "focus": "Co-regulation of emotions through comfort, naming feelings, and predictable routines." },
+    { "domain": "respect-empathy-relationships", "focus": "Secure attachment, turn-taking, early sharing, and warmth toward familiar people." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Year 1 (0–12 months)",
+      "objectives": [
+        "Establish secure attachment through consistent, responsive care.",
+        "Support sensory and motor development from reflexes to sitting and first crawling.",
+        "Begin serve-and-return interactions: respond to the baby's sounds, gestures, and gazes.",
+        "Establish safe sleep, feeding, and daily rhythm."
+      ],
+      "capabilities": [
+        "Holds head steady; rolls over; sits with and then without support.",
+        "Tracks faces and objects; reaches for and grasps objects.",
+        "Babbles and responds to familiar voices; turns to name.",
+        "Shows comfort-seeking and stranger awareness (healthy attachment signs)."
+      ]
+    },
+    {
+      "label": "Year 2 (12–24 months)",
+      "objectives": [
+        "Encourage walking, climbing, and active exploration in safe spaces.",
+        "Grow vocabulary through naming, narration, and shared reading.",
+        "Introduce simple choices and routines that build early independence.",
+        "Support emotional co-regulation as the toddler meets frustration."
+      ],
+      "capabilities": [
+        "Walks independently; begins to run and climb.",
+        "Uses several single words and begins two-word combinations.",
+        "Points to show interest; imitates adults and other children.",
+        "Begins self-feeding with fingers and a spoon; helps with dressing."
+      ]
+    },
+    {
+      "label": "Year 3 (24–36 months)",
+      "objectives": [
+        "Expand language into short sentences and simple questions.",
+        "Encourage pretend play, building, and simple problem-solving.",
+        "Support early emotional vocabulary: naming feelings together.",
+        "Build everyday self-care routines (handwashing, tidying up, dressing)."
+      ],
+      "capabilities": [
+        "Speaks in short sentences; follows two-step instructions.",
+        "Engages in pretend play and simple cooperative play.",
+        "Sorts shapes and colours; completes simple puzzles.",
+        "Shows growing independence and expresses a wide range of emotions."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Serve and return", "description": "Notice the baby's sounds, faces, and gestures and respond warmly in turn — the back-and-forth that builds the brain.", "domain": "communication-and-language" },
+      { "title": "Tummy time & floor play", "description": "Supervised time on the tummy and floor to build strength and encourage reaching, rolling, and crawling.", "domain": "physical-and-motor", "materials": ["soft mat", "a few safe objects"] },
+      { "title": "Narrate the day", "description": "Talk through everyday routines ('Now we wash your hands') to flood the child with language.", "domain": "communication-and-language" },
+      { "title": "Shared book-looking", "description": "Look at a picture book together daily, naming and pointing — no need to read every word.", "domain": "communication-and-language", "materials": ["board book"] }
+    ],
+    "weekly": [
+      { "title": "Sensory exploration tray", "description": "Offer safe, varied textures and materials to touch and explore under supervision.", "domain": "play-exploration-creativity", "materials": ["large spoons", "cups", "water or dry rice (supervised)"] },
+      { "title": "Outdoor exploration", "description": "Time outside to watch, hear, and touch the natural world — leaves, grass, light, sound.", "domain": "play-exploration-creativity" },
+      { "title": "Music and movement", "description": "Sing, clap, and move together to build rhythm, listening, and joyful connection.", "domain": "emotional-and-resilience" }
+    ]
+  },
+  "parentGuidance": [
+    { "topic": "You are the first teacher", "guidance": "In these years your warm, responsive presence does more for the child's brain than any product. The platform's job is to support you, not to come between you and your child." },
+    { "topic": "Serve and return", "guidance": "When your baby coos, points, or reaches, respond — look, name, smile, hand it over. This simple back-and-forth is the single most powerful early-learning activity, backed by the Harvard Center on the Developing Child." },
+    { "topic": "Follow the child's lead", "guidance": "Offer safe opportunities and let curiosity drive. You do not need flashcards; you need conversation, play, and safety." },
+    { "topic": "Screens", "guidance": "For children under about two, real interaction beats screens. Prioritise faces, voices, and hands-on play. When in doubt about your child's development, talk to your paediatrician — the platform never replaces that." }
+  ],
+  "milestones": [
+    { "area": "Motor", "description": "Sits without support", "typicalBy": "by 9 months", "sourceRef": "cdc-milestones" },
+    { "area": "Motor", "description": "Walks independently", "typicalBy": "by 18 months", "sourceRef": "cdc-milestones" },
+    { "area": "Language", "description": "Says several single words", "typicalBy": "by 18 months", "sourceRef": "cdc-milestones" },
+    { "area": "Language", "description": "Uses two-word phrases", "typicalBy": "by 24 months", "sourceRef": "cdc-milestones" },
+    { "area": "Social-emotional", "description": "Shows comfort-seeking and attachment to caregivers", "typicalBy": "by 12 months", "sourceRef": "who-ncf" },
+    { "area": "Cognitive", "description": "Engages in pretend play", "typicalBy": "by 36 months", "sourceRef": "cdc-milestones" }
+  ],
+  "safety": [
+    { "topic": "Safe sleep", "guidance": "Follow current safe-sleep guidance (back to sleep, firm flat surface, no loose bedding) to reduce the risk of sleep-related infant death. Confirm specifics with your paediatrician." },
+    { "topic": "Childproofing", "guidance": "As the child becomes mobile, secure furniture, cover outlets, lock away chemicals and medicines, and keep small objects out of reach to prevent choking." },
+    { "topic": "Supervision around water and heat", "guidance": "Never leave a child unattended near water, cooking, or hot liquids. Set water heaters to a safe temperature." },
+    { "topic": "A secure base", "guidance": "Emotional safety matters as much as physical safety. Consistent, comforting responses tell the child the world is safe to explore." }
+  ],
+  "outcomes": [
+    "The child shows signs of secure attachment and seeks comfort from trusted caregivers.",
+    "The child reaches gross and fine motor milestones within typical, flexible ranges.",
+    "The child communicates with words, gestures, and short sentences by age three.",
+    "The child engages in curious, exploratory, and pretend play.",
+    "The caregiver can describe and create safe, language-rich, play-based daily routines."
+  ],
+  "projects": [
+    { "title": "Our family routine chart", "description": "Caregiver builds a simple visual daily rhythm (sleep, meals, play, outdoor time) with the platform's guidance, adapting it to the child.", "skillsPractised": ["routine-building", "observation", "responsiveness"] },
+    { "title": "A homemade sensory basket", "description": "Assemble a basket of safe household objects of different textures, weights, and sounds for the child to explore under supervision.", "skillsPractised": ["sensory play", "fine motor", "exploration"] },
+    { "title": "First words journal", "description": "Caregiver notes new sounds and words to celebrate progress and spot when to seek a professional's input — never as a competitive scorecard.", "skillsPractised": ["observation", "language-support"] }
+  ],
+  "appFeatures": [
+    { "feature": "Caregiver daily guide", "userJourney": "A parent opens the app and sees today's age-appropriate serve-and-return prompt, one play idea, and one safety reminder — short enough to do in minutes.", "audience": "parent" },
+    { "feature": "Milestone awareness tracker", "userJourney": "A caregiver gently logs milestones and receives supportive, non-alarming context, with a clear prompt to consult a paediatrician for concerns.", "audience": "parent" },
+    { "feature": "Activity library by domain", "userJourney": "A caregiver browses hands-on activities filtered by development domain and the materials they have at home.", "audience": "parent" },
+    { "feature": "Safety checklist", "userJourney": "A caregiver works through an age-staged home-safety checklist that updates as the child becomes mobile.", "audience": "guardian" }
+  ],
+  "sources": [
+    { "id": "who-ncf", "title": "Nurturing Care Framework for Early Childhood Development", "org": "World Health Organization", "url": "https://www.who.int/publications/i/item/9789241514064" },
+    { "id": "cdc-milestones", "title": "Developmental Milestones (Learn the Signs. Act Early.)", "org": "US CDC", "url": "https://www.cdc.gov/act-early/milestones/" },
+    { "id": "unicef-ecd", "title": "Early Childhood Development & Parenting", "org": "UNICEF India", "url": "https://www.unicef.org/india/ecd-parenting" },
+    { "id": "harvard-serve-return", "title": "Serve and Return", "org": "Harvard Center on the Developing Child", "url": "https://developingchild.harvard.edu/resource-guides/guide-to-serve-and-return/" }
+  ]
+}

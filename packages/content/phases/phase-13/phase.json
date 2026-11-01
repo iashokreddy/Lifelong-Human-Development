@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-13",
+  "slug": "legacy",
+  "order": 13,
+  "title": "Phase 13 — Legacy & Lifelong Learning (40+)",
+  "ageRange": { "label": "40+", "startYears": 40, "endYears": null, "indicative": true },
+  "primaryObjective": "Legacy, giving back, and lifelong learning — the person passes on wisdom and keeps growing to the end.",
+  "summary": "The final phase of the lifespan curriculum is about what endures: the wisdom, values, relationships, and contributions a person passes on, and the quiet joy of learning that never stops. The focus is legacy — not monuments, but the people lifted, the knowledge shared, and the values lived — alongside continued growth, curiosity, and connection. Age ranges are open-ended; this chapter honours that development continues as long as life does. The platform supports meaningful contribution, lifelong learning, and human connection, and always directs health and care needs to people and professionals.",
+  "guidingPrinciple": "A torch-bearer's final task is to pass the torch. Legacy is the sum of the people you helped think for themselves, the values you lived, and the curiosity you kept until the end.",
+  "developmentDomains": [
+    { "domain": "contribution-to-society", "focus": "Passing on wisdom, resources, and values; building legacy through people and causes rather than possessions." },
+    { "domain": "respect-empathy-relationships", "focus": "Deep, generative relationships, intergenerational bonds, and nurturing family and community." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Living and transmitting values, integrity, and responsibility to future generations." },
+    { "domain": "play-exploration-creativity", "focus": "Lifelong curiosity, creativity, storytelling, and learning for its own sake." },
+    { "domain": "emotional-and-resilience", "focus": "Acceptance, gratitude, meaning, and emotional wellbeing through life's later transitions." },
+    { "domain": "health-hygiene-self-care", "focus": "Maintaining dignity, independence, and wellbeing with appropriate support and care." },
+    { "domain": "critical-thinking-problem-solving", "focus": "Reflective wisdom, perspective, and sharing hard-won judgement with others." },
+    { "domain": "communication-and-language", "focus": "Storytelling, teaching, and preserving knowledge and memory for those who follow." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Giving back (sharing and transmitting)",
+      "objectives": [
+        "Pass on wisdom, skills, and values to younger generations.",
+        "Contribute resources, time, or knowledge to lasting causes.",
+        "Strengthen family and community bonds across generations.",
+        "Record and share stories, knowledge, and lessons learned."
+      ],
+      "capabilities": [
+        "Mentors and teaches others generously and effectively.",
+        "Directs time or resources toward causes that outlast them.",
+        "Deepens intergenerational relationships and belonging.",
+        "Preserves and shares meaningful knowledge and memory."
+      ]
+    },
+    {
+      "label": "Lifelong learning (growing to the end)",
+      "objectives": [
+        "Keep learning and exploring new ideas with curiosity.",
+        "Find meaning, gratitude, and acceptance through later transitions.",
+        "Sustain dignity, independence, and wellbeing with support as needed.",
+        "Reflect on life and share its lessons with others."
+      ],
+      "capabilities": [
+        "Continues to learn and create for joy and growth.",
+        "Approaches change with acceptance and gratitude.",
+        "Accepts appropriate help while maintaining dignity and agency.",
+        "Shares reflective wisdom that helps others live well."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Keep learning", "description": "Read, explore, or create something each day — curiosity sustains the mind and spirit at every age.", "domain": "play-exploration-creativity" },
+      { "title": "Connect and give", "description": "Reach out to a person or cause, offering presence, help, or wisdom.", "domain": "contribution-to-society" }
+    ],
+    "weekly": [
+      { "title": "Tell a story", "description": "Share a memory, lesson, or piece of knowledge with family or a younger person, preserving it for the future.", "domain": "communication-and-language" },
+      { "title": "Mentor or teach", "description": "Guide someone with your experience, passing the torch while staying open to learning from them.", "domain": "respect-empathy-relationships" },
+      { "title": "Reflect with gratitude", "description": "Reflect on the week with gratitude and note what gave it meaning, building acceptance and perspective.", "domain": "emotional-and-resilience" }
+    ]
+  },
+  "milestones": [
+    { "area": "Legacy", "description": "Passes on wisdom, values, and knowledge to others", "typicalBy": "ongoing", "sourceRef": "unesco-lifelong-learning" },
+    { "area": "Lifelong learning", "description": "Continues to learn and create for joy and growth", "typicalBy": "ongoing", "sourceRef": "unesco-lifelong-learning" },
+    { "area": "Wellbeing", "description": "Finds meaning, gratitude, and acceptance through later life", "typicalBy": "ongoing", "sourceRef": "who-healthy-ageing" },
+    { "area": "Connection", "description": "Sustains deep intergenerational relationships", "typicalBy": "ongoing", "sourceRef": "who-healthy-ageing" }
+  ],
+  "safety": [
+    { "topic": "Health, independence, and care", "guidance": "Maintain health and dignity with appropriate medical and personal support. Consult doctors and care professionals for health needs; the platform offers general guidance and never replaces professional care." },
+    { "topic": "Protection from exploitation", "guidance": "Be alert to scams and financial or emotional exploitation that target older adults. Involve trusted family and qualified professionals before major financial or legal decisions." },
+    { "topic": "Mental health and meaning", "guidance": "Loss, change, and isolation can affect wellbeing. Seek professional help for persistent low mood or grief, and contact crisis services if in distress. Human connection is central to wellbeing." },
+    { "topic": "Human connection over substitution", "guidance": "The platform supports relationships, contribution, and learning. It strengthens family, community, and professional care and never positions itself as a replacement for human relationships." }
+  ],
+  "outcomes": [
+    "The person passes on wisdom, values, and knowledge to others.",
+    "The person contributes to causes and people that outlast them.",
+    "The person keeps learning and creating with curiosity.",
+    "The person sustains deep intergenerational relationships.",
+    "The person finds meaning, gratitude, and acceptance in later life."
+  ],
+  "projects": [
+    { "title": "Memory and wisdom archive", "description": "Record stories, lessons, recipes, skills, or history for family and community, preserving knowledge for those who follow.", "skillsPractised": ["storytelling", "preservation", "communication"] },
+    { "title": "Mentoring or teaching legacy", "description": "Commit to regularly mentoring or teaching others, passing on a craft, values, or life wisdom.", "skillsPractised": ["mentoring", "teaching", "generosity"] },
+    { "title": "Giving-back initiative", "description": "Direct time, knowledge, or resources toward a cause or community in a way designed to endure.", "skillsPractised": ["contribution-to-society", "planning", "stewardship"] }
+  ],
+  "appFeatures": [
+    { "feature": "Story and wisdom recorder", "userJourney": "A learner captures memories, lessons, and knowledge to share with family and future generations in a lasting archive.", "audience": "learner" },
+    { "feature": "Legacy mentorship hub", "userJourney": "A learner connects with younger people to mentor and teach, with the platform nurturing genuine human relationships.", "audience": "educator" },
+    { "feature": "Lifelong-learning companion", "userJourney": "A learner keeps exploring new topics and creative pursuits at their own pace, for joy rather than credentials.", "audience": "learner" },
+    { "feature": "Wellbeing and connection support", "userJourney": "A learner receives gentle prompts toward connection and meaning, with clear signposting to family, community, and professional care for health and wellbeing needs.", "audience": "learner" }
+  ],
+  "sources": [
+    { "id": "unesco-lifelong-learning", "title": "Lifelong Learning", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "who-healthy-ageing", "title": "Ageing and Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/ageing" },
+    { "id": "who-mental-health", "title": "Mental Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/mental-health" }
+  ]
+}

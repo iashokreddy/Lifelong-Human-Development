@@ -1,0 +1,122 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-03",
+  "slug": "6-10-years",
+  "order": 3,
+  "title": "Phase 03 — Foundations of Reasoning (6–10 years)",
+  "ageRange": { "label": "6–10 years", "startYears": 6, "endYears": 10, "indicative": true },
+  "primaryObjective": "Foundational knowledge, reasoning, and creativity — the child learns to read the world, ask good questions, and make things.",
+  "summary": "In these years the child becomes a reader, a maker, and a reasoner. Rather than memorising facts for tests, the focus is learning how knowledge is built: observing, questioning, explaining, and creating. Reading, numbers, and first digital tools become instruments for curiosity. The platform supports caregivers and educators in keeping learning hands-on and tied to real life, while growing responsibility, friendship skills, and the ability to disagree kindly.",
+  "guidingPrinciple": "Build thinkers, not reciters. The aim is not the right answer repeated back, but a child who can ask a good question, test an idea, and explain their reasoning.",
+  "developmentDomains": [
+    { "domain": "critical-thinking-problem-solving", "focus": "Asking why and how, comparing ideas, spotting patterns, and explaining reasoning with evidence." },
+    { "domain": "communication-and-language", "focus": "Fluent reading for meaning, writing to express ideas, listening, and respectful discussion." },
+    { "domain": "scientific-thinking", "focus": "Observing, asking testable questions, predicting, experimenting, and drawing conclusions from everyday phenomena." },
+    { "domain": "play-exploration-creativity", "focus": "Making, inventing, art, music, and imaginative projects that turn ideas into something real." },
+    { "domain": "respect-empathy-relationships", "focus": "Friendship, cooperation, handling disagreement kindly, and seeing other points of view." },
+    { "domain": "practical-life-skills", "focus": "Responsibility for belongings and chores, time and task planning, and money basics in real contexts." },
+    { "domain": "technology-and-digital", "focus": "First, guided digital tools: safe searching, simple creation, and the idea that screens are tools, not masters." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Fairness, honesty, rules and why they exist, and caring for the shared spaces and people around them." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 6–7",
+      "objectives": [
+        "Grow reading fluency and a love of stories and information.",
+        "Turn everyday curiosity into simple questions the child can investigate.",
+        "Build responsibility through real chores and caring for belongings.",
+        "Practise friendship skills: sharing, turn-taking, and settling disagreements."
+      ],
+      "capabilities": [
+        "Reads simple texts for meaning and writes short sentences.",
+        "Counts, adds, and subtracts using real objects and situations.",
+        "Carries out a small daily responsibility independently.",
+        "Names others' feelings and begins to resolve conflicts with words."
+      ]
+    },
+    {
+      "label": "Age 7–8",
+      "objectives": [
+        "Read longer texts and explain what they mean in their own words.",
+        "Run simple, fair experiments: question, guess, test, and talk about results.",
+        "Introduce safe, guided use of digital tools for creating and finding things out.",
+        "Discuss fairness, honesty, and rules through real situations and stories."
+      ],
+      "capabilities": [
+        "Summarises a story or article and asks questions about it.",
+        "Plans and runs a simple experiment and records what happened.",
+        "Uses a device with guidance to create or research something specific.",
+        "Explains why a rule is fair or unfair with a reason."
+      ]
+    },
+    {
+      "label": "Age 9–10",
+      "objectives": [
+        "Build independent projects that span several days or weeks.",
+        "Compare sources and begin to ask 'how do we know this is true?'",
+        "Manage simple budgets, time, and personal goals.",
+        "Take on roles that contribute to family, class, or community."
+      ],
+      "capabilities": [
+        "Plans, carries out, and reflects on a multi-step project.",
+        "Questions where information comes from and checks it against another source.",
+        "Manages small amounts of money and plans how to use time.",
+        "Takes initiative to help and contribute without being asked."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Read and retell", "description": "Read something each day and explain it back in your own words, or ask one question about it, to turn reading into thinking.", "domain": "communication-and-language", "materials": ["books", "articles for children"] },
+      { "title": "One real responsibility", "description": "A daily job the child owns — feeding a pet, packing their bag, helping with a meal — building reliability and belonging.", "domain": "practical-life-skills" },
+      { "title": "Question of the day", "description": "Capture a real question the child wonders about and decide together how you could find out the answer.", "domain": "critical-thinking-problem-solving" }
+    ],
+    "weekly": [
+      { "title": "Kitchen or backyard experiment", "description": "Pick a question (Which paper plane flies farthest? Does salt melt ice faster?), predict, test it fairly, and discuss the result.", "domain": "scientific-thinking", "materials": ["household items", "notebook"] },
+      { "title": "Make something that works", "description": "Design and build a small working thing — a marble run, a simple circuit, a comic — and improve it after testing.", "domain": "play-exploration-creativity", "materials": ["recycled materials", "craft supplies"] },
+      { "title": "Fair-or-not debate", "description": "Discuss a real situation from the week and argue both sides kindly to practise reasoning and empathy.", "domain": "ethics-responsibility-citizenship" }
+    ]
+  },
+  "parentGuidance": [
+    { "topic": "Protect curiosity from the test mindset", "guidance": "Praise effort, questions, and attempts rather than only correct answers. A child who feels safe to be wrong keeps thinking and exploring." },
+    { "topic": "Screens as tools", "guidance": "Set clear, calm limits and favour creating over passive watching. Explore and talk about what your child does online rather than only policing it." },
+    { "topic": "Let them struggle a little", "guidance": "Resist solving every problem. Ask 'what have you tried?' and give hints rather than answers, so the child builds persistence and problem-solving." },
+    { "topic": "Partner with teachers, not replace them", "guidance": "Use the platform to support what happens at school and home. For learning, attention, or wellbeing concerns, talk with teachers and professionals." }
+  ],
+  "milestones": [
+    { "area": "Cognitive", "description": "Reads for meaning and explains ideas in their own words", "typicalBy": "by 8 years", "sourceRef": "unesco-education" },
+    { "area": "Reasoning", "description": "Plans and carries out a simple, fair investigation", "typicalBy": "by 9 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Social-emotional", "description": "Resolves many peer conflicts with words and sees other viewpoints", "typicalBy": "by 9 years", "sourceRef": "who-adolescent" },
+    { "area": "Digital", "description": "Uses guided digital tools safely to create or find information", "typicalBy": "by 10 years", "sourceRef": "unesco-education" }
+  ],
+  "safety": [
+    { "topic": "First online safety", "guidance": "Keep devices in shared spaces, agree on what is okay to do and share, and make it safe to tell a trusted adult about anything upsetting online — without fear of losing the device." },
+    { "topic": "Independence with a safety net", "guidance": "As the child does more alone (walking to a friend's, staying briefly unsupervised), agree clear rules, check-ins, and what to do in an emergency." },
+    { "topic": "Kindness and bullying", "guidance": "Talk about treating others with respect online and offline, recognising bullying, and telling a trusted adult. Emphasise that reporting harm is brave, not tattling." },
+    { "topic": "Wellbeing routes to people", "guidance": "If a child seems anxious, withdrawn, or is being harmed, involve parents, teachers, and professionals. The platform guides; it never replaces human care." }
+  ],
+  "outcomes": [
+    "The child reads fluently for meaning and writes to express their own ideas.",
+    "The child can turn curiosity into a question and test it in a simple, fair way.",
+    "The child plans and completes a multi-step project and reflects on it.",
+    "The child uses digital tools safely and knows screens are tools, not masters.",
+    "The child takes responsibility and treats others, online and offline, with respect."
+  ],
+  "projects": [
+    { "title": "Mini research-and-make project", "description": "Pick a question the child cares about, research it from two sources, and make something that shares the answer — a poster, model, or short talk.", "skillsPractised": ["research", "comparing-sources", "communication"] },
+    { "title": "Family mini-enterprise", "description": "Plan and run a small stall or service (lemonade, cards, chores for neighbours), tracking simple costs, earnings, and what to give back.", "skillsPractised": ["money-basics", "planning", "responsibility"] },
+    { "title": "Build and improve", "description": "Build a working contraption (marble run, simple circuit, paper bridge), test it, and redesign it to work better.", "skillsPractised": ["design", "scientific-thinking", "perseverance"] }
+  ],
+  "appFeatures": [
+    { "feature": "Curiosity journal", "userJourney": "A learner logs questions they wonder about, and the app suggests a safe, hands-on way to investigate one with a parent or teacher.", "audience": "learner" },
+    { "feature": "Project planner for kids", "userJourney": "A child breaks a project into small steps with a caregiver, tracks progress, and reflects at the end on what they learned.", "audience": "learner" },
+    { "feature": "Guided digital-skills path", "userJourney": "An educator assigns short, safe activities on searching, creating, and spotting unreliable information, with offline discussion prompts.", "audience": "educator" },
+    { "feature": "Home–school bridge", "userJourney": "A parent sees how to extend classroom themes at home with real-life activities, reinforcing teachers rather than second-guessing them.", "audience": "parent" }
+  ],
+  "sources": [
+    { "id": "cdc-milestones", "title": "Developmental Milestones (Learn the Signs. Act Early.)", "org": "US CDC", "url": "https://www.cdc.gov/act-early/milestones/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "who-adolescent", "title": "Adolescent Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/adolescent-health" }
+  ]
+}

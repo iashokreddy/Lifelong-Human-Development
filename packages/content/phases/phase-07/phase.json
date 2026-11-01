@@ -1,0 +1,103 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-07",
+  "slug": "17-20-years",
+  "order": 7,
+  "title": "Phase 07 — Applied Mastery (17–20 years)",
+  "ageRange": { "label": "17–20 years", "startYears": 17, "endYears": 20, "indicative": true },
+  "primaryObjective": "Higher-education-level practical knowledge — the young adult applies deep knowledge to real problems and work.",
+  "summary": "In the late teens and early twenties, the young adult moves from learning about a field to working within it. The focus is applied mastery: solving real problems, producing professional-quality work, collaborating across disciplines, and taking ownership of learning and finances. Whether in university, training, or work, the aim is practical capability and the judgement to apply knowledge ethically. The platform supports the learner as an autonomous adult, with mentors and educators as partners rather than authorities.",
+  "guidingPrinciple": "Knowledge becomes valuable when it is applied. The aim is a capable adult who can solve real problems, keep learning independently, and use their skills to create value responsibly.",
+  "developmentDomains": [
+    { "domain": "critical-thinking-problem-solving", "focus": "Applying knowledge to complex, open problems, synthesising across fields, and sound professional judgement." },
+    { "domain": "financial-and-professional", "focus": "Professional skills, workplace collaboration, personal finance, and managing a career and income independently." },
+    { "domain": "technology-and-digital", "focus": "Advanced, professional use of tools and technologies in a chosen field, including responsible use of AI." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Professional ethics, integrity, and understanding one's responsibilities to others and society." },
+    { "domain": "innovation-entrepreneurship-leadership", "focus": "Initiative, collaboration, and turning applied knowledge into projects, products, or research." },
+    { "domain": "emotional-and-resilience", "focus": "Independence, self-management, handling setbacks and uncertainty, and protecting mental health." },
+    { "domain": "respect-empathy-relationships", "focus": "Teamwork across differences, professional relationships, and healthy adult relationships." },
+    { "domain": "contribution-to-society", "focus": "Applying skills in service, research, or community work that benefits others." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 17–18 (Transition to autonomy)",
+      "objectives": [
+        "Take full ownership of learning, schedules, and finances.",
+        "Apply knowledge to real briefs and problems, not only coursework.",
+        "Build professional habits: communication, reliability, and collaboration.",
+        "Establish healthy routines for independent living and wellbeing."
+      ],
+      "capabilities": [
+        "Manages own learning, deadlines, and personal budget independently.",
+        "Produces work that solves a real problem to a usable standard.",
+        "Collaborates professionally and communicates clearly in a team.",
+        "Maintains routines that support health and mental wellbeing."
+      ]
+    },
+    {
+      "label": "Age 18–20 (Applied capability)",
+      "objectives": [
+        "Reach professional-quality output in a chosen field.",
+        "Contribute to real research, products, or ventures with others.",
+        "Apply ethical judgement to professional decisions.",
+        "Build a network of peers, mentors, and collaborators."
+      ],
+      "capabilities": [
+        "Delivers professional-standard work and defends their decisions.",
+        "Contributes meaningfully to a team project, study, or venture.",
+        "Identifies and reasons through ethical issues in their work.",
+        "Builds and maintains a supportive professional network."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Apply, don't just study", "description": "Spend focused time applying what you're learning to a real problem, product, or question rather than passive review.", "domain": "critical-thinking-problem-solving" },
+      { "title": "Professional reflection", "description": "Note one thing you did well and one to improve in how you work with others and manage yourself.", "domain": "financial-and-professional" }
+    ],
+    "weekly": [
+      { "title": "Collaborate on something real", "description": "Work with others on a project, study, or venture with a genuine deliverable and shared accountability.", "domain": "innovation-entrepreneurship-leadership" },
+      { "title": "Finances and future review", "description": "Review income, expenses, savings, and progress toward goals, adjusting your plan.", "domain": "financial-and-professional" },
+      { "title": "Seek feedback", "description": "Share work with a mentor or peer and act on specific feedback to raise your standard.", "domain": "respect-empathy-relationships" }
+    ]
+  },
+  "milestones": [
+    { "area": "Professional", "description": "Produces professional-standard work applied to real problems", "typicalBy": "by 20 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Financial", "description": "Manages income, budgeting, and savings independently", "typicalBy": "by 20 years", "sourceRef": "unesco-education" },
+    { "area": "Ethical", "description": "Applies professional ethics and integrity to real decisions", "typicalBy": "by 20 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Wellbeing", "description": "Manages independent living and mental health with support when needed", "typicalBy": "by 20 years", "sourceRef": "who-mental-health" }
+  ],
+  "parentGuidance": [
+    { "topic": "Shift from directing to partnering", "guidance": "At this stage your role moves to that of a supportive peer and sounding board. Offer perspective when asked and trust the young adult to own their decisions." },
+    { "topic": "Support, don't rescue", "guidance": "Let the young adult handle their own problems and consequences, while being a reliable backstop in genuine crises and signposting professional help when needed." }
+  ],
+  "safety": [
+    { "topic": "Mental health and independent living", "guidance": "The transition to independence can be stressful. Persistent anxiety, depression, or burnout should be addressed with a professional. In crisis, contact local emergency or crisis services immediately." },
+    { "topic": "Financial safety and debt", "guidance": "Understand credit, debt, and contracts before signing. Be wary of scams and high-pressure financial offers, and seek qualified advice for major decisions rather than relying on the platform." },
+    { "topic": "Professional integrity and safety", "guidance": "Know your rights at work and the limits of what you should be asked to do. Report unsafe or unethical demands, and never compromise integrity under pressure." },
+    { "topic": "Healthy adult relationships", "guidance": "Respect, consent, and boundaries remain central. Abusive or coercive situations warrant support from trusted people and professionals; the platform strengthens those connections, never replaces them." }
+  ],
+  "outcomes": [
+    "The learner applies deep knowledge to solve real, open-ended problems.",
+    "The learner produces professional-quality work and can justify their decisions.",
+    "The learner manages their own learning, finances, and independent living.",
+    "The learner applies ethical judgement in professional contexts.",
+    "The learner collaborates well and builds a supportive network."
+  ],
+  "projects": [
+    { "title": "Real client or research brief", "description": "Take on a genuine brief from an organisation, client, or research group, deliver a professional result, and reflect on the experience.", "skillsPractised": ["applied-problem-solving", "professionalism", "delivery"] },
+    { "title": "Co-found or join a venture", "description": "Help start or run a real venture or project with shared accountability, handling planning, finances, and teamwork.", "skillsPractised": ["entrepreneurship", "collaboration", "financial-management"] },
+    { "title": "Open contribution", "description": "Contribute to an open-source project, community research, or public resource, working to real standards with a wider community.", "skillsPractised": ["technical-skill", "collaboration", "contribution-to-society"] }
+  ],
+  "appFeatures": [
+    { "feature": "Applied-project workspace", "userJourney": "A learner scopes real briefs, tracks deliverables and feedback, and builds a portfolio of applied work rather than grades.", "audience": "learner" },
+    { "feature": "Personal-finance toolkit", "userJourney": "A learner plans budgets, savings, and goals and learns about credit and contracts, with a clear nudge to consult qualified advisers for major decisions.", "audience": "learner" },
+    { "feature": "Mentor and peer network", "userJourney": "A learner connects with mentors and peers for feedback and collaboration, with safeguards and a reminder that the platform complements professional guidance.", "audience": "learner" },
+    { "feature": "Educator applied-learning dashboard", "userJourney": "An educator designs real-world briefs and assesses applied competencies and reflection, partnering with learners as emerging professionals.", "audience": "educator" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-mental-health", "title": "Mental Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/mental-health" }
+  ]
+}
