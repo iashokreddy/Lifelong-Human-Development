@@ -5,6 +5,12 @@ import Link from 'next/link';
 import { askAssistant, type AskResult } from '../../lib/api';
 import styles from './page.module.css';
 
+// On the static GitHub Pages build there is no backend unless an API URL was
+// supplied at build time, so the assistant is shown as unavailable.
+const assistantUnavailable =
+  process.env.NEXT_PUBLIC_STATIC_EXPORT === 'true' &&
+  !process.env.NEXT_PUBLIC_API_BASE_URL;
+
 export default function AssistantPage() {
   const [question, setQuestion] = useState('');
   const [loading, setLoading] = useState(false);
@@ -49,6 +55,15 @@ export default function AssistantPage() {
         </p>
       </div>
 
+      {assistantUnavailable ? (
+        <div className={styles.answer} role="status">
+          <p>
+            The assistant needs a live backend, which this static preview does
+            not include. You can still explore every phase, and a parent,
+            teacher, or trusted adult is always the best person to ask.
+          </p>
+        </div>
+      ) : (
       <form className={styles.form} onSubmit={handleSubmit}>
         <label className={styles.label} htmlFor="assistant-question">
           Your question
@@ -65,6 +80,7 @@ export default function AssistantPage() {
           {loading ? 'Asking…' : 'Ask the assistant'}
         </button>
       </form>
+      )}
 
       {error ? (
         <div className={styles.answer} role="status">

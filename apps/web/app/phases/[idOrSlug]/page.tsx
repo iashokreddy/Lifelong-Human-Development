@@ -2,7 +2,15 @@ import Link from 'next/link';
 import type { CatalogEntry } from '@lhd/shared';
 import EmptyState from '../../../components/EmptyState';
 import PhaseView from '../../../components/PhaseView';
-import { getPhase, getPhases } from '../../../lib/api';
+import {
+  getPhase,
+  getPhases,
+  listPhaseParams,
+} from '../../../lib/content-source';
+
+export function generateStaticParams() {
+  return listPhaseParams();
+}
 
 interface PageProps {
   params: Promise<{ idOrSlug: string }>;
