@@ -1,6 +1,6 @@
 import EmptyState from '../../components/EmptyState';
 import PhaseCard from '../../components/PhaseCard';
-import { getPhases } from '../../lib/api';
+import { getPhases } from '../../lib/content-source';
 import styles from './page.module.css';
 
 export default async function PhasesPage() {

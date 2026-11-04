@@ -1,7 +1,7 @@
 import EmptyState from '../components/EmptyState';
 import PhaseTimeline from '../components/PhaseTimeline';
 import PrincipleBanner from '../components/PrincipleBanner';
-import { getPhases } from '../lib/api';
+import { getPhases } from '../lib/content-source';
 import styles from './page.module.css';
 
 export default async function HomePage() {
