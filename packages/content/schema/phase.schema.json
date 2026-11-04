@@ -1,0 +1,265 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://lifelong-human-development/schema/phase.schema.json",
+  "title": "Life-stage Phase",
+  "description": "A single life-stage phase of the Lifelong Human Development curriculum. This is the single source of truth consumed by the apps and used to generate the phase PDF.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "order",
+    "title",
+    "ageRange",
+    "primaryObjective",
+    "summary",
+    "developmentDomains",
+    "yearPlans",
+    "milestones",
+    "safety",
+    "outcomes",
+    "projects",
+    "appFeatures",
+    "sources"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional editor convenience pointer to this schema."
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^phase-\\d{2}$",
+      "description": "Stable identifier, e.g. 'phase-01'."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-friendly slug, e.g. '0-3-years'."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 99,
+      "description": "Display order among phases."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "description": "Human title, e.g. 'Phase 01 — Foundations (0–3 years)'."
+    },
+    "ageRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "startYears"],
+      "properties": {
+        "label": { "type": "string", "description": "e.g. '0–3 years'." },
+        "startYears": { "type": "number", "minimum": 0 },
+        "endYears": {
+          "type": ["number", "null"],
+          "description": "null means open-ended (e.g. 40+)."
+        },
+        "indicative": {
+          "type": "boolean",
+          "default": true,
+          "description": "Age ranges are guides, not rigid limits."
+        }
+      }
+    },
+    "primaryObjective": {
+      "type": "string",
+      "minLength": 5,
+      "description": "One-line primary objective for this stage."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "description": "A short paragraph describing the stage and its focus."
+    },
+    "guidingPrinciple": {
+      "type": "string",
+      "description": "Stage-specific expression of the overall philosophy."
+    },
+    "developmentDomains": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Whole-person development areas addressed in this stage.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["domain", "focus"],
+        "properties": {
+          "domain": {
+            "type": "string",
+            "enum": [
+              "physical-and-motor",
+              "safety-and-awareness",
+              "health-hygiene-self-care",
+              "play-exploration-creativity",
+              "communication-and-language",
+              "emotional-and-resilience",
+              "respect-empathy-relationships",
+              "practical-life-skills",
+              "scientific-thinking",
+              "technology-and-digital",
+              "critical-thinking-problem-solving",
+              "ethics-responsibility-citizenship",
+              "financial-and-professional",
+              "innovation-entrepreneurship-leadership",
+              "contribution-to-society"
+            ]
+          },
+          "focus": {
+            "type": "string",
+            "minLength": 5,
+            "description": "What this domain focuses on during this stage."
+          }
+        }
+      }
+    },
+    "yearPlans": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Year-by-year (or sub-stage) learning and capability plans.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "objectives", "capabilities"],
+        "properties": {
+          "label": { "type": "string", "description": "e.g. 'Year 1 (0–12 months)'." },
+          "objectives": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string" }
+          },
+          "capabilities": {
+            "type": "array",
+            "minItems": 1,
+            "description": "Capabilities expected to gradually emerge.",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "activities": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Practical, hands-on activities integrated into everyday life.",
+      "properties": {
+        "daily": { "type": "array", "items": { "$ref": "#/definitions/activity" } },
+        "weekly": { "type": "array", "items": { "$ref": "#/definitions/activity" } }
+      }
+    },
+    "parentGuidance": {
+      "type": "array",
+      "description": "Guidance for parents/caregivers (most relevant in early phases).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["topic", "guidance"],
+        "properties": {
+          "topic": { "type": "string" },
+          "guidance": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "milestones": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Developmental milestones to be aware of (awareness, not a test).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["area", "description"],
+        "properties": {
+          "area": { "type": "string" },
+          "description": { "type": "string" },
+          "typicalBy": { "type": "string", "description": "e.g. 'by 12 months'." },
+          "sourceRef": { "type": "string", "description": "Matches a sources[].id." }
+        }
+      }
+    },
+    "safety": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Safety and wellbeing guidance for this stage.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["topic", "guidance"],
+        "properties": {
+          "topic": { "type": "string" },
+          "guidance": { "type": "string", "minLength": 10 }
+        }
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Measurable learning outcomes for the stage.",
+      "items": { "type": "string" }
+    },
+    "projects": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Project and idea-development opportunities (hands-on, real).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "description"],
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "type": "string" },
+          "skillsPractised": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "appFeatures": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Application features and user journeys for this stage.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["feature", "userJourney"],
+        "properties": {
+          "feature": { "type": "string" },
+          "userJourney": { "type": "string" },
+          "audience": {
+            "type": "string",
+            "enum": ["learner", "parent", "guardian", "educator"]
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Research foundations cited by this phase.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "url"],
+        "properties": {
+          "id": { "type": "string", "description": "Short citation key, e.g. 'who-ncf'." },
+          "title": { "type": "string" },
+          "org": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "description"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "domain": { "type": "string", "description": "Related development domain." },
+        "materials": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

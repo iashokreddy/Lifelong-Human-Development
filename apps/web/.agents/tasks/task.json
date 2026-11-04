@@ -1,0 +1,7 @@
+{
+  "task_id": "task-web-app",
+  "task_description": "Build the @lhd/web Next.js (App Router, TS) web application under apps/web for the Lifelong Human Development platform: a typed API client over @lhd/shared consuming the existing apps/api at http://localhost:3001/api, pages (/ home timeline, /phases grid, /phases/[idOrSlug] full phase view, /assistant), accessible calm styling, and copy reflecting the 'supports, never replaces' philosophy. Must build offline (API down) with 0 errors, lint clean, unit/component tests passing, and a runtime HTML probe recorded in apps/web/VERIFICATION.md. Create/modify only under apps/web plus additive root package.json scripts; do not touch packages/content, packages/shared, tools/, apps/api, apps/mobile.",
+  "status": "pending",
+  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003"],
+  "blocked_reason": null
+}

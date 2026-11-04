@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-11",
+  "slug": "35-40-years",
+  "order": 11,
+  "title": "Phase 11 — Strategy & Mentorship (35–40 years)",
+  "ageRange": { "label": "35–40 years", "startYears": 35, "endYears": 40, "indicative": true },
+  "primaryObjective": "Strategic thinking and mentorship — the adult thinks long-term, shapes direction, and grows others.",
+  "summary": "In the late thirties, accumulated experience matures into strategic judgement and the capacity to develop others. The focus shifts from doing everything oneself to setting direction, making wise long-term decisions, and multiplying impact through mentorship and institution-building. This stage is about perspective: seeing patterns, anticipating consequences, and investing in people and systems that outlast any single effort. The platform supports the adult as strategist and mentor, and reinforces human and professional relationships at every turn.",
+  "guidingPrinciple": "Multiply, don't just produce. The wisest contribution at this stage is to grow other people and build systems that let good work continue without you.",
+  "developmentDomains": [
+    { "domain": "critical-thinking-problem-solving", "focus": "Strategic and systems thinking, long-horizon judgement, and anticipating second-order consequences." },
+    { "domain": "respect-empathy-relationships", "focus": "Mentoring, coaching, developing others, and leading through trust rather than control." },
+    { "domain": "innovation-entrepreneurship-leadership", "focus": "Setting direction, building institutions and teams, and enabling others to lead." },
+    { "domain": "financial-and-professional", "focus": "Strategic financial planning, stewardship of resources, and sustainable career or enterprise direction." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Principled leadership, responsibility for long-term impact, and civic contribution." },
+    { "domain": "contribution-to-society", "focus": "Investing experience in people, institutions, and causes that create lasting good." },
+    { "domain": "emotional-and-resilience", "focus": "Perspective and equanimity, managing competing demands, and sustaining purpose and wellbeing." },
+    { "domain": "health-hygiene-self-care", "focus": "Proactive health, prevention, and sustaining energy for the decades ahead." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 35–37 (Strategy)",
+      "objectives": [
+        "Shift from doing to setting direction and making long-term decisions.",
+        "Develop systems and teams that work without constant hands-on effort.",
+        "Plan finances and career strategically for the longer horizon.",
+        "Invest proactively in physical and mental health."
+      ],
+      "capabilities": [
+        "Sets clear long-term direction and prioritises what matters most.",
+        "Builds systems and delegates so work continues without them.",
+        "Makes strategic financial and career decisions with foresight.",
+        "Maintains health habits that sustain long-term energy."
+      ]
+    },
+    {
+      "label": "Age 37–40 (Mentorship)",
+      "objectives": [
+        "Mentor and grow others deliberately and generously.",
+        "Build or strengthen institutions and communities that last.",
+        "Lead with principle and take responsibility for long-term impact.",
+        "Invest experience in causes and people beyond immediate work."
+      ],
+      "capabilities": [
+        "Develops others into capable, confident contributors and leaders.",
+        "Strengthens an institution, team, or community for the long term.",
+        "Makes principled decisions weighing long-term consequences.",
+        "Contributes wisdom and resources to wider good."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Think in decades", "description": "For one decision, ask how it looks in five or ten years, not just this week — practising long-horizon judgement.", "domain": "critical-thinking-problem-solving" },
+      { "title": "Develop someone", "description": "Invest in a mentee or team member with a question, feedback, or a stretch opportunity rather than doing the work for them.", "domain": "respect-empathy-relationships" }
+    ],
+    "weekly": [
+      { "title": "Strategy review", "description": "Step back from execution to review direction, priorities, and the systems that let work continue without you.", "domain": "innovation-entrepreneurship-leadership" },
+      { "title": "Mentorship session", "description": "Hold a deliberate coaching or mentoring conversation and follow up on past commitments.", "domain": "contribution-to-society" },
+      { "title": "Health and finances review", "description": "Review proactive health habits and long-term financial plans, adjusting for the decades ahead.", "domain": "health-hygiene-self-care" }
+    ]
+  },
+  "milestones": [
+    { "area": "Strategy", "description": "Sets long-term direction and anticipates second-order consequences", "typicalBy": "by 40 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Mentorship", "description": "Deliberately develops others into capable contributors and leaders", "typicalBy": "by 40 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Stewardship", "description": "Strengthens institutions or communities for the long term", "typicalBy": "by 40 years", "sourceRef": "unesco-education" },
+    { "area": "Health", "description": "Maintains proactive, preventive health habits", "typicalBy": "by 40 years", "sourceRef": "who-healthy-ageing" }
+  ],
+  "safety": [
+    { "topic": "Proactive health and prevention", "guidance": "This is a key stage for prevention. Keep up screenings and healthy habits, and consult doctors for concerns. The platform offers general guidance and never substitutes for medical advice." },
+    { "topic": "Wellbeing and perspective", "guidance": "Mid-life pressures and transitions can affect mental health. Seek professional support for persistent stress, low mood, or crisis, and contact emergency or crisis services when needed." },
+    { "topic": "Responsible influence", "guidance": "Greater influence means greater responsibility for those you lead and mentor. Guard against conflicts of interest and protect the wellbeing of people who rely on your decisions." },
+    { "topic": "Strategic financial safety", "guidance": "Long-term decisions about savings, retirement, and dependants carry real risk. Consult qualified financial and legal professionals rather than relying on the platform." }
+  ],
+  "outcomes": [
+    "The adult sets long-term direction and makes strategic decisions.",
+    "The adult deliberately mentors and grows others.",
+    "The adult builds systems and institutions that last beyond them.",
+    "The adult invests in health, finances, and wellbeing for the long horizon.",
+    "The adult leads with principle and responsibility for lasting impact."
+  ],
+  "projects": [
+    { "title": "Mentorship programme", "description": "Design and run a mentorship effort that deliberately grows several people over time, and track their development.", "skillsPractised": ["mentoring", "coaching", "people-development"] },
+    { "title": "Institution-building initiative", "description": "Strengthen or create a team, process, or institution that can thrive without your constant involvement.", "skillsPractised": ["systems-thinking", "delegation", "stewardship"] },
+    { "title": "Long-term strategy plan", "description": "Develop and act on a five-to-ten-year strategy across work, contribution, health, and finances, reviewing it regularly.", "skillsPractised": ["strategic-planning", "foresight", "prioritisation"] }
+  ],
+  "appFeatures": [
+    { "feature": "Strategic planning studio", "userJourney": "A learner builds long-horizon plans, maps dependencies and consequences, and tracks progress over years.", "audience": "learner" },
+    { "feature": "Mentorship management", "userJourney": "A learner organises mentoring relationships, sets development goals with mentees, and reflects on their growth.", "audience": "educator" },
+    { "feature": "Preventive-health prompts", "userJourney": "A learner receives general reminders for healthy habits and screenings, always directing specific concerns to medical professionals.", "audience": "learner" },
+    { "feature": "Legacy-and-stewardship view", "userJourney": "A learner reviews the institutions and people they are investing in and the lasting impact they are building.", "audience": "learner" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-healthy-ageing", "title": "Ageing and Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/ageing" },
+    { "id": "who-mental-health", "title": "Mental Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/mental-health" }
+  ]
+}

@@ -1,0 +1,23 @@
+.banner {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  color: var(--accent-strong);
+}
+
+.text {
+  margin: 0 0 0.5rem;
+  color: var(--text);
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}

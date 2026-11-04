@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-10",
+  "slug": "28-35-years",
+  "order": 10,
+  "title": "Phase 10 — Building & Contributing (28–35 years)",
+  "ageRange": { "label": "28–35 years", "startYears": 28, "endYears": 35, "indicative": true },
+  "primaryObjective": "Building, creating, and contributing — the adult builds lasting work, family, and community impact.",
+  "summary": "The late twenties and early thirties are often the great building years: careers, enterprises, families, and communities take shape. The focus is creating things that last and contributing beyond oneself — raising children or supporting others, deepening craft, building institutions, and giving back. The work of this stage is integration: balancing ambition with relationships and wellbeing, and aligning effort with values. The platform supports the adult learner across work, family, and community, and connects them with professional help where life demands it.",
+  "guidingPrinciple": "Build things that outlast you and lift others as you rise. A life of contribution is measured not only by what you achieve but by what you enable in others.",
+  "developmentDomains": [
+    { "domain": "contribution-to-society", "focus": "Creating lasting value through work, family, community, and institutions beyond personal gain." },
+    { "domain": "innovation-entrepreneurship-leadership", "focus": "Building and scaling work, leading larger efforts, and creating opportunity for others." },
+    { "domain": "financial-and-professional", "focus": "Career and enterprise growth, financial stewardship, and planning for family and the long term." },
+    { "domain": "respect-empathy-relationships", "focus": "Deep partnerships, parenting or caregiving, and sustaining friendships and community ties." },
+    { "domain": "emotional-and-resilience", "focus": "Balancing demands, managing stress, and sustaining wellbeing across work and life." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Living values consistently, responsible stewardship, and active citizenship." },
+    { "domain": "critical-thinking-problem-solving", "focus": "Long-horizon decisions, prioritisation, and navigating complex competing demands." },
+    { "domain": "health-hygiene-self-care", "focus": "Sustaining physical and mental health through demanding, high-output years." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 28–31 (Building)",
+      "objectives": [
+        "Build significant work, enterprise, or craft to a lasting standard.",
+        "Integrate career with family, relationships, and wellbeing.",
+        "Practise financial stewardship and long-term planning.",
+        "Begin contributing to others through mentoring or community."
+      ],
+      "capabilities": [
+        "Delivers substantial, lasting work and takes responsibility for it.",
+        "Balances competing demands without neglecting health or relationships.",
+        "Manages finances with a long-term, family-aware plan.",
+        "Supports and develops at least one other person."
+      ]
+    },
+    {
+      "label": "Age 31–35 (Contributing)",
+      "objectives": [
+        "Scale impact through institutions, teams, or community.",
+        "Align work and life more fully with core values.",
+        "Make long-horizon decisions about direction and legacy.",
+        "Give back meaningfully through service or mentorship."
+      ],
+      "capabilities": [
+        "Creates opportunity and value for others at scale.",
+        "Makes choices consistent with stated values under pressure.",
+        "Plans several years ahead across work, family, and finances.",
+        "Contributes regularly to community or a cause they value."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Align action with values", "description": "Check that today's priorities reflect what matters most, not just what is urgent.", "domain": "ethics-responsibility-citizenship" },
+      { "title": "Protect health and relationships", "description": "Guard time for movement, rest, and the people closest to you, treating it as foundational, not optional.", "domain": "health-hygiene-self-care" }
+    ],
+    "weekly": [
+      { "title": "Advance a lasting build", "description": "Move significant work, enterprise, or craft forward with a concrete step toward a durable result.", "domain": "innovation-entrepreneurship-leadership" },
+      { "title": "Mentor or contribute", "description": "Invest time in developing someone or giving back to your community.", "domain": "contribution-to-society" },
+      { "title": "Finances and planning review", "description": "Review financial stewardship and long-term plans for family and future, adjusting as life changes.", "domain": "financial-and-professional" }
+    ]
+  },
+  "milestones": [
+    { "area": "Contribution", "description": "Creates lasting value and opportunity for others", "typicalBy": "by 35 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Integration", "description": "Balances work, family, and wellbeing sustainably", "typicalBy": "by 35 years", "sourceRef": "who-healthy-ageing" },
+    { "area": "Financial", "description": "Practises long-term financial stewardship for family and future", "typicalBy": "by 35 years", "sourceRef": "unesco-education" },
+    { "area": "Mentorship", "description": "Regularly develops and lifts others", "typicalBy": "by 35 years", "sourceRef": "oecd-learning-compass" }
+  ],
+  "safety": [
+    { "topic": "Burnout and balance", "guidance": "High-output years risk burnout and strained relationships. Protect rest, boundaries, and connection, and seek professional help for sustained stress or low mood. In crisis, contact local emergency or crisis services immediately." },
+    { "topic": "Family and caregiving wellbeing", "guidance": "Parenting and caregiving are demanding. Seek support from partners, community, and professionals, and consult doctors for health concerns. The platform strengthens, never replaces, family and medical care." },
+    { "topic": "Financial stewardship", "guidance": "Larger responsibilities raise the stakes of financial decisions. Understand risk, insurance, and planning, and consult qualified advisers for significant choices rather than relying on the platform." },
+    { "topic": "Ethical responsibility at scale", "guidance": "As influence grows, so does responsibility for the people affected by your work. Lead with integrity and protect those who depend on your decisions." }
+  ],
+  "outcomes": [
+    "The adult builds substantial, lasting work, enterprise, or craft.",
+    "The adult integrates career, family, and wellbeing sustainably.",
+    "The adult practises long-term financial stewardship.",
+    "The adult contributes to others through mentorship and community.",
+    "The adult aligns decisions with their core values under pressure."
+  ],
+  "projects": [
+    { "title": "Build something that lasts", "description": "Create a durable piece of work — an institution, product, body of craft, or team — designed to outlive your direct involvement.", "skillsPractised": ["long-term-building", "leadership", "stewardship"] },
+    { "title": "Community contribution project", "description": "Lead or sustain a meaningful contribution to your community or a cause, measuring the difference it makes.", "skillsPractised": ["contribution-to-society", "organisation", "empathy"] },
+    { "title": "Life-and-work integration plan", "description": "Design and live a realistic plan that balances ambition with health, relationships, and values, and review it honestly.", "skillsPractised": ["prioritisation", "self-management", "reflection"] }
+  ],
+  "appFeatures": [
+    { "feature": "Long-horizon planner", "userJourney": "A learner plans across work, family, finances, and wellbeing over several years, revisiting priorities as life changes.", "audience": "learner" },
+    { "feature": "Mentorship exchange", "userJourney": "A learner both finds mentors and mentors others, with the platform reinforcing real human relationships over automated advice.", "audience": "learner" },
+    { "feature": "Wellbeing and balance check-in", "userJourney": "A learner reviews stress, health, and relationships, and is clearly signposted to professional help when needed rather than counselled by the app.", "audience": "learner" },
+    { "feature": "Contribution tracker", "userJourney": "A learner sets and follows through on ways to give back and sees the cumulative impact of their contribution over time.", "audience": "learner" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-healthy-ageing", "title": "Ageing and Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/ageing" },
+    { "id": "who-mental-health", "title": "Mental Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/mental-health" }
+  ]
+}

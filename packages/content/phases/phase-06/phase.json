@@ -1,0 +1,104 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-06",
+  "slug": "15-17-years",
+  "order": 6,
+  "title": "Phase 06 — Direction & Discovery (15–17 years)",
+  "ageRange": { "label": "15–17 years", "startYears": 15, "endYears": 17, "indicative": true },
+  "primaryObjective": "Advanced learning and career discovery — the young person goes deep, tests paths, and learns to steer their own growth.",
+  "summary": "In the later teens, the young person can learn at an advanced level and begins to shape a direction for their life. The focus is depth in chosen areas, discovering possible careers and paths through real experience, and building self-direction, financial literacy, and ethical judgement. Rather than locking into a single track, the aim is to explore widely through doing — internships, projects, mentors — and to learn how to keep learning. The platform supports learners, mentors, and educators while keeping wellbeing and safety central.",
+  "guidingPrinciple": "Discovery over prescription. Help the young person test many paths through real experience and learn to direct their own growth, rather than being pushed down a track chosen for them.",
+  "developmentDomains": [
+    { "domain": "critical-thinking-problem-solving", "focus": "Advanced analysis, research, synthesis across subjects, and tackling open-ended, real-world problems." },
+    { "domain": "financial-and-professional", "focus": "Career discovery, workplace skills, earning and budgeting, and understanding real paths and their trade-offs." },
+    { "domain": "technology-and-digital", "focus": "Applying and building with technology in a chosen field, and using digital tools professionally and ethically." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Ethical decision-making, rights and responsibilities, and active, informed citizenship." },
+    { "domain": "emotional-and-resilience", "focus": "Managing pressure and uncertainty, self-motivation, handling failure, and protecting mental health." },
+    { "domain": "respect-empathy-relationships", "focus": "Collaboration, leadership, respectful and healthy relationships, and professional conduct." },
+    { "domain": "innovation-entrepreneurship-leadership", "focus": "Turning ideas into action, initiative, and leading small teams or ventures." },
+    { "domain": "contribution-to-society", "focus": "Service, volunteering, and using emerging skills to help others." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 15–16",
+      "objectives": [
+        "Go deep in one or two areas of genuine interest through real projects.",
+        "Explore careers and paths by meeting people and trying work, not just reading.",
+        "Build self-direction: set goals, plan, and manage time without being told.",
+        "Strengthen financial literacy with real earning, saving, and budgeting."
+      ],
+      "capabilities": [
+        "Produces advanced work in a chosen area and can explain their methods.",
+        "Describes several realistic paths and what each involves day to day.",
+        "Sets and pursues goals independently and manages their own schedule.",
+        "Manages income and a budget and understands saving and simple interest."
+      ]
+    },
+    {
+      "label": "Age 16–17",
+      "objectives": [
+        "Undertake an internship, apprenticeship, or substantial real-world project.",
+        "Make reasoned decisions about next steps while keeping options open.",
+        "Lead or co-lead a team, venture, or service initiative.",
+        "Develop resilience and healthy coping for pressure and setbacks."
+      ],
+      "capabilities": [
+        "Contributes real value in a work or project setting and reflects on it.",
+        "Weighs education and career options against their interests and values.",
+        "Leads a small team or project and handles setbacks constructively.",
+        "Recognises stress and uses healthy strategies and support when needed."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Deliberate practice", "description": "Spend focused time improving one real skill, tracking progress and seeking feedback rather than just logging hours.", "domain": "financial-and-professional" },
+      { "title": "Learn how to learn", "description": "Reflect briefly on what you learned today and how you learned it, strengthening self-directed learning.", "domain": "critical-thinking-problem-solving" }
+    ],
+    "weekly": [
+      { "title": "Talk to someone who does the work", "description": "Interview or shadow a person in a field you're curious about and note what the work is really like.", "domain": "financial-and-professional" },
+      { "title": "Ship something real", "description": "Advance a project toward a real audience or user — publish, pitch, or deliver — and gather honest feedback.", "domain": "innovation-entrepreneurship-leadership" },
+      { "title": "Money and plan review", "description": "Review budget, savings, and progress toward goals, and adjust your plan for the coming week.", "domain": "financial-and-professional" }
+    ]
+  },
+  "parentGuidance": [
+    { "topic": "Be a guide, not a director", "guidance": "Support exploration of many paths rather than pushing one. The goal is a young person who can choose for themselves and change course with confidence." },
+    { "topic": "Normalise trying and failing", "guidance": "Internships, projects, and ventures that don't work out are valuable learning, not wasted time. Celebrate the attempt and the lessons." },
+    { "topic": "Protect mental health under pressure", "guidance": "Exams and future decisions can feel overwhelming. Keep talking, keep perspective, and involve professionals if you see sustained distress. The platform never replaces that support." }
+  ],
+  "milestones": [
+    { "area": "Self-direction", "description": "Sets goals and manages their own learning and time independently", "typicalBy": "by 17 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Career discovery", "description": "Explores careers through real experience and names realistic options", "typicalBy": "by 17 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Financial", "description": "Manages income and a budget and understands saving", "typicalBy": "by 17 years", "sourceRef": "unesco-education" },
+    { "area": "Social-emotional", "description": "Uses healthy coping strategies under academic and social pressure", "typicalBy": "by 17 years", "sourceRef": "who-adolescent" }
+  ],
+  "safety": [
+    { "topic": "Mental health under pressure", "guidance": "High pressure around exams and the future is common. Persistent anxiety, depression, or burnout should be addressed with a professional. In crisis, contact local emergency or crisis services immediately." },
+    { "topic": "Safe and fair work", "guidance": "Know your rights in work and internships: fair treatment, safe conditions, and never being pressured into anything unsafe or unethical. Speak to a trusted adult if something feels wrong." },
+    { "topic": "Financial safety", "guidance": "Be alert to scams, get-rich-quick schemes, and online financial pressure. Verify before committing money, and ask a trusted adult or professional for advice on anything significant." },
+    { "topic": "Healthy relationships and boundaries", "guidance": "Respect, consent, and boundaries remain essential. Abusive or coercive situations should be shared with a trusted adult or professional; the platform points you to people, not away from them." }
+  ],
+  "outcomes": [
+    "The learner produces advanced work in chosen areas and can explain their methods.",
+    "The learner has explored real careers and can describe realistic options and trade-offs.",
+    "The learner directs their own learning, time, and goals.",
+    "The learner manages money responsibly and understands saving and budgeting.",
+    "The learner handles pressure and setbacks with healthy strategies and support."
+  ],
+  "projects": [
+    { "title": "Real-world internship or apprenticeship", "description": "Spend time in a genuine work setting, contribute to real tasks, and reflect on what the field involves and whether it fits.", "skillsPractised": ["workplace-skills", "professionalism", "self-reflection"] },
+    { "title": "Launch a micro-venture or initiative", "description": "Start a small business, club, or service initiative: plan it, run it, handle real money or impact, and learn from the outcome.", "skillsPractised": ["entrepreneurship", "leadership", "financial-literacy"] },
+    { "title": "Deep-dive portfolio project", "description": "Create a substantial piece of work in a chosen field to a professional standard and present it to a real audience for feedback.", "skillsPractised": ["domain-mastery", "communication", "receiving-feedback"] }
+  ],
+  "appFeatures": [
+    { "feature": "Career-exploration hub", "userJourney": "A learner explores real paths through interviews, day-in-the-life content, and project matches, keeping options open rather than narrowing too soon.", "audience": "learner" },
+    { "feature": "Self-directed learning planner", "userJourney": "A learner sets goals, plans deliberate practice, and reflects on progress, building the habit of steering their own growth.", "audience": "learner" },
+    { "feature": "Mentor-matching with safeguards", "userJourney": "A learner connects with a vetted mentor for guidance while the app keeps parents/guardians informed and never replaces professional or family support.", "audience": "learner" },
+    { "feature": "Educator work-based learning tools", "userJourney": "An educator coordinates internships and project-based learning, tracking real-world competencies and reflection rather than exam scores alone.", "audience": "educator" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-adolescent", "title": "Adolescent Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/adolescent-health" }
+  ]
+}

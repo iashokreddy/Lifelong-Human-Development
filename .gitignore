@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.next/
+.expo/
+coverage/
+playwright-report/
+test-results/
+apps/web/playwright-report/
+apps/web/test-results/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store

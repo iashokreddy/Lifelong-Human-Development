@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-12",
+  "slug": "40-plus",
+  "order": 12,
+  "title": "Phase 12 — Reinvention & Wisdom (40+)",
+  "ageRange": { "label": "40+", "startYears": 40, "endYears": null, "indicative": true },
+  "primaryObjective": "Reinvention, wisdom, and lifelong contribution — the adult renews purpose and shares hard-won judgement.",
+  "summary": "Life after forty is not a plateau but a stage of renewal. With decades of experience, the adult can reinvent their path, learn new things without fear of being a beginner, and turn experience into wisdom worth sharing. The focus is purposeful reinvention — new skills, directions, and chapters — alongside the deeper judgement that comes from having lived, failed, and grown. Age ranges here are open-ended; this is one chapter of a lifelong journey. The platform supports continued learning, meaningful reinvention, and connection, while routing health and wellbeing needs to professionals.",
+  "guidingPrinciple": "It is never too late to begin again. Wisdom is experience turned into judgement and generosity — and the willingness to keep learning as a humble beginner keeps a person a torch-bearer for life.",
+  "developmentDomains": [
+    { "domain": "critical-thinking-problem-solving", "focus": "Wisdom and judgement — seeing the whole, weighing experience, and making sense of complexity and change." },
+    { "domain": "innovation-entrepreneurship-leadership", "focus": "Reinventing paths, starting new chapters, and applying experience to new domains and ventures." },
+    { "domain": "contribution-to-society", "focus": "Sharing wisdom, mentoring across generations, and contributing to causes larger than oneself." },
+    { "domain": "emotional-and-resilience", "focus": "Meaning and purpose through change, adapting to new circumstances, and emotional depth and acceptance." },
+    { "domain": "health-hygiene-self-care", "focus": "Active, preventive health and sustaining vitality and independence." },
+    { "domain": "respect-empathy-relationships", "focus": "Deep relationships, intergenerational connection, and nurturing community and belonging." },
+    { "domain": "financial-and-professional", "focus": "Flexible, sustainable financial planning and purposeful, possibly non-linear, career reinvention." },
+    { "domain": "play-exploration-creativity", "focus": "Renewed curiosity, creative pursuits, and learning for joy and growth, not credentials." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Renewal (reassessing and reimagining)",
+      "objectives": [
+        "Reassess purpose and what a meaningful next chapter looks like.",
+        "Learn something genuinely new, embracing being a beginner again.",
+        "Adapt finances and work flexibly to support reinvention.",
+        "Deepen relationships and invest in health for the years ahead."
+      ],
+      "capabilities": [
+        "Articulates a renewed sense of purpose and direction.",
+        "Learns a new skill or domain from scratch with confidence.",
+        "Adjusts work and finances to enable a new chapter.",
+        "Sustains strong relationships and proactive health habits."
+      ]
+    },
+    {
+      "label": "Wisdom (applying and sharing experience)",
+      "objectives": [
+        "Turn decades of experience into practical wisdom and judgement.",
+        "Mentor across generations and share what you have learned.",
+        "Contribute to causes and communities beyond yourself.",
+        "Pursue creativity and learning for growth and joy."
+      ],
+      "capabilities": [
+        "Offers sound judgement grounded in experience and humility.",
+        "Mentors younger people and learns from them in return.",
+        "Contributes time and wisdom to community or causes.",
+        "Keeps learning and creating as a source of vitality."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Stay a beginner", "description": "Spend time learning something new and unfamiliar, keeping curiosity and humility alive.", "domain": "play-exploration-creativity" },
+      { "title": "Move and nourish", "description": "Keep up movement, good nutrition, and rest that sustain vitality and independence.", "domain": "health-hygiene-self-care" }
+    ],
+    "weekly": [
+      { "title": "Reinvention step", "description": "Take one concrete step toward a new chapter — a skill, project, or direction you are exploring.", "domain": "innovation-entrepreneurship-leadership" },
+      { "title": "Share wisdom", "description": "Mentor or guide someone, offering experience generously while staying open to learning from them.", "domain": "contribution-to-society" },
+      { "title": "Connect deeply", "description": "Invest in a meaningful relationship or community tie across generations.", "domain": "respect-empathy-relationships" }
+    ]
+  },
+  "milestones": [
+    { "area": "Reinvention", "description": "Learns a new domain and opens a meaningful new chapter", "typicalBy": "ongoing", "sourceRef": "oecd-learning-compass" },
+    { "area": "Wisdom", "description": "Applies experience as sound, humble judgement", "typicalBy": "ongoing", "sourceRef": "unesco-lifelong-learning" },
+    { "area": "Contribution", "description": "Mentors across generations and gives back to community", "typicalBy": "ongoing", "sourceRef": "oecd-learning-compass" },
+    { "area": "Health", "description": "Sustains active, preventive health and vitality", "typicalBy": "ongoing", "sourceRef": "who-healthy-ageing" }
+  ],
+  "safety": [
+    { "topic": "Active and preventive health", "guidance": "Stay active and keep up screenings and preventive care, and consult doctors for any concerns. The platform offers general guidance and never replaces medical advice or care." },
+    { "topic": "Mental health and purpose", "guidance": "Transitions and change can affect mood and purpose. Seek professional support for persistent low mood, anxiety, or crisis, and contact emergency or crisis services when needed. Human connection matters most." },
+    { "topic": "Financial safety in transition", "guidance": "Reinvention and planning for later life carry financial risk. Beware of scams targeting older adults, and consult qualified financial and legal advisers for significant decisions." },
+    { "topic": "Connection over isolation", "guidance": "Isolation harms health and wellbeing. The platform encourages real relationships, community, and professional support, and never positions itself as a substitute for human connection." }
+  ],
+  "outcomes": [
+    "The adult renews their sense of purpose and opens meaningful new chapters.",
+    "The adult keeps learning new skills and domains without fear of beginning again.",
+    "The adult turns experience into sound, humble judgement.",
+    "The adult mentors across generations and contributes to community.",
+    "The adult sustains health, relationships, and vitality for the years ahead."
+  ],
+  "projects": [
+    { "title": "A new-chapter venture", "description": "Start a new pursuit — a business, craft, study, or role — that reinvents your path, learning openly as a beginner.", "skillsPractised": ["reinvention", "learning-agility", "courage"] },
+    { "title": "Wisdom-sharing project", "description": "Capture and share your experience through mentoring, writing, teaching, or community work that helps others.", "skillsPractised": ["mentoring", "communication", "generosity"] },
+    { "title": "Legacy-of-learning habit", "description": "Build a sustainable routine of lifelong learning and creative pursuit that keeps you growing and engaged.", "skillsPractised": ["self-directed-learning", "curiosity", "discipline"] }
+  ],
+  "appFeatures": [
+    { "feature": "Reinvention pathways", "userJourney": "A learner explores new directions and builds a personalised plan to learn and transition at their own pace.", "audience": "learner" },
+    { "feature": "Intergenerational mentorship", "userJourney": "A learner shares experience with younger people and learns from them, with the platform fostering real human relationships.", "audience": "educator" },
+    { "feature": "Lifelong-learning library", "userJourney": "A learner pursues new skills and creative interests for growth and joy, free of exams or credentials.", "audience": "learner" },
+    { "feature": "Wellbeing and connection prompts", "userJourney": "A learner gets gentle nudges toward health habits and real connection, with clear signposting to professionals for medical or mental-health needs.", "audience": "learner" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-lifelong-learning", "title": "Lifelong Learning", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-healthy-ageing", "title": "Ageing and Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/ageing" },
+    { "id": "who-mental-health", "title": "Mental Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/mental-health" }
+  ]
+}

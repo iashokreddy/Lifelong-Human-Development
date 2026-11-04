@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-04",
+  "slug": "10-12-years",
+  "order": 4,
+  "title": "Phase 04 — Thinking & Responsibility (10–12 years)",
+  "ageRange": { "label": "10–12 years", "startYears": 10, "endYears": 12, "indicative": true },
+  "primaryObjective": "Critical thinking and responsibility — the young person questions claims, weighs choices, and owns their actions.",
+  "summary": "On the edge of adolescence, the young person can hold more than one idea at once, see consequences, and take real responsibility. The work of this stage is learning to think critically — to ask who is saying this and why, to tell evidence from opinion — and to act responsibly online and offline. The platform supports caregivers and educators in giving real decisions, real projects, and honest conversations about digital life, money, and fairness.",
+  "guidingPrinciple": "Teach how to weigh, not what to believe. A torch-bearer questions sources, considers other views, and takes responsibility for the choices that follow.",
+  "developmentDomains": [
+    { "domain": "critical-thinking-problem-solving", "focus": "Distinguishing evidence from opinion, spotting bias and misinformation, and reasoning through multi-step problems." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Owning choices and their consequences, fairness, honesty, and contributing to home, school, and community." },
+    { "domain": "technology-and-digital", "focus": "Digital citizenship: privacy, reputation, healthy habits, and judging whether online information is reliable." },
+    { "domain": "communication-and-language", "focus": "Explaining and defending ideas with reasons, listening to disagree well, and clear writing for a real audience." },
+    { "domain": "emotional-and-resilience", "focus": "Managing bigger feelings, handling setbacks and peer pressure, and building a growth mindset." },
+    { "domain": "practical-life-skills", "focus": "Planning time, managing small budgets and goals, cooking, and looking after themselves and their space." },
+    { "domain": "respect-empathy-relationships", "focus": "Deeper friendships, teamwork, resolving conflict, and respecting difference." },
+    { "domain": "scientific-thinking", "focus": "Designing fair tests, controlling variables, and drawing careful conclusions from data." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 10–11",
+      "objectives": [
+        "Practise telling fact from opinion and checking where claims come from.",
+        "Take on responsibilities with real consequences at home and school.",
+        "Build healthy digital habits and understand privacy and reputation.",
+        "Plan and manage a personal goal or small budget over time."
+      ],
+      "capabilities": [
+        "Identifies the source of a claim and whether it is evidence or opinion.",
+        "Completes agreed responsibilities and accepts consequences fairly.",
+        "Explains basic privacy settings and what is risky to share online.",
+        "Plans steps and tracks progress toward a personal goal."
+      ]
+    },
+    {
+      "label": "Age 11–12",
+      "objectives": [
+        "Compare multiple viewpoints on an issue and form a reasoned view.",
+        "Design and run a fair investigation that controls variables.",
+        "Lead or contribute meaningfully to a team project.",
+        "Recognise and resist peer pressure and manipulative content online."
+      ],
+      "capabilities": [
+        "Argues a position with evidence while acknowledging other views.",
+        "Plans an experiment that changes one thing at a time and interprets results.",
+        "Takes a clear role in a group and helps the team reach a goal.",
+        "Pauses before reacting online and spots attempts to mislead or pressure."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Spot the claim", "description": "Pick one thing you read, saw, or heard and ask: who said it, how do they know, and what might be missing?", "domain": "critical-thinking-problem-solving" },
+      { "title": "Own a real job", "description": "Hold a responsibility that others rely on — cooking a meal, managing a younger sibling's routine help, maintaining a shared space.", "domain": "practical-life-skills" }
+    ],
+    "weekly": [
+      { "title": "Two-sides discussion", "description": "Take a real issue and argue both sides fairly before deciding what you actually think and why.", "domain": "ethics-responsibility-citizenship" },
+      { "title": "Fair-test experiment", "description": "Design an experiment that changes only one variable, record the data, and explain the conclusion and its limits.", "domain": "scientific-thinking", "materials": ["notebook", "household materials"] },
+      { "title": "Digital-life review", "description": "Review screen time, privacy settings, and one thing seen online this week that seemed misleading — and why.", "domain": "technology-and-digital" }
+    ]
+  },
+  "parentGuidance": [
+    { "topic": "Give real decisions", "guidance": "Let your child make genuine choices with real (safe) consequences. Responsibility grows from owning outcomes, not from being protected from every mistake." },
+    { "topic": "Talk about online life openly", "guidance": "Stay curious and non-judgemental about what your child sees and does online so they come to you with problems. Agree on habits together rather than only imposing rules." },
+    { "topic": "Model questioning", "guidance": "Show how you check a surprising claim before believing or sharing it. Children copy how the adults around them handle information." },
+    { "topic": "Watch wellbeing, involve professionals", "guidance": "Pre-teen years bring mood and friendship ups and downs. If you see lasting distress, withdrawal, or risk, involve school counsellors or health professionals. The platform supports, never replaces, that care." }
+  ],
+  "milestones": [
+    { "area": "Cognitive", "description": "Distinguishes evidence from opinion and questions the source of a claim", "typicalBy": "by 12 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Digital", "description": "Understands privacy, digital reputation, and basic misinformation", "typicalBy": "by 12 years", "sourceRef": "unesco-education" },
+    { "area": "Social-emotional", "description": "Begins to recognise and manage peer pressure", "typicalBy": "by 12 years", "sourceRef": "who-adolescent" },
+    { "area": "Responsibility", "description": "Carries out responsibilities with real consequences reliably", "typicalBy": "by 12 years", "sourceRef": "oecd-learning-compass" }
+  ],
+  "safety": [
+    { "topic": "Digital privacy and reputation", "guidance": "Understand that what is shared online can last and spread. Keep personal details private, use strong privacy settings, and think before posting about yourself or others." },
+    { "topic": "Recognising manipulation", "guidance": "Learn to notice clickbait, scams, pressure, and content designed to provoke. Pause before reacting and check with a trusted adult when unsure." },
+    { "topic": "Peer pressure and boundaries", "guidance": "Rehearse ways to say no and leave uncomfortable situations. Knowing your boundaries and a safe adult to call keeps you in control." },
+    { "topic": "Wellbeing and help-seeking", "guidance": "Big feelings are normal, but ongoing sadness, anxiety, or being bullied should be shared with a trusted adult or professional. Asking for help is a strength." }
+  ],
+  "outcomes": [
+    "The young person can tell evidence from opinion and check where claims come from.",
+    "The young person weighs multiple viewpoints before forming a reasoned position.",
+    "The young person manages responsibilities, time, and a small budget or goal.",
+    "The young person practises safe, thoughtful digital citizenship.",
+    "The young person handles setbacks and peer pressure with growing resilience."
+  ],
+  "projects": [
+    { "title": "Fact-check investigation", "description": "Take a surprising claim circulating online, trace it to its source, check it against reliable references, and present what is true, false, or uncertain.", "skillsPractised": ["source-evaluation", "research", "communication"] },
+    { "title": "Solve a real problem at home or school", "description": "Identify a genuine small problem, propose a fair solution, test it, and present the results and what you would change.", "skillsPractised": ["problem-solving", "project-planning", "responsibility"] },
+    { "title": "Run a savings goal", "description": "Set a personal savings goal, plan how to reach it over weeks, track it, and reflect on the trade-offs you made.", "skillsPractised": ["money-management", "planning", "self-discipline"] }
+  ],
+  "appFeatures": [
+    { "feature": "Source-checker practice", "userJourney": "A learner works through real-world examples, deciding if a claim is evidence or opinion and how they might verify it, then discusses with a teacher.", "audience": "learner" },
+    { "feature": "Responsibility & goal tracker", "userJourney": "A learner sets responsibilities and a personal goal, logs progress, and reflects, with a parent view that encourages rather than surveils.", "audience": "learner" },
+    { "feature": "Digital-citizenship toolkit", "userJourney": "An educator runs discussion-led lessons on privacy, reputation, and misinformation, with scenarios students debate together.", "audience": "educator" },
+    { "feature": "Family conversation prompts", "userJourney": "A parent gets open-ended prompts to talk about online life, money, and fairness without lecturing, keeping the channel of trust open.", "audience": "parent" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "who-adolescent", "title": "Adolescent Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/adolescent-health" },
+    { "id": "unicef-ecd", "title": "For Every Child — Parenting and Adolescents", "org": "UNICEF", "url": "https://www.unicef.org" }
+  ]
+}

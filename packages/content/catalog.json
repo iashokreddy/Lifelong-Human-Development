@@ -1,0 +1,20 @@
+{
+  "$schema": "./schema/catalog.schema.json",
+  "title": "Lifelong Human Development — Phase Catalog",
+  "description": "Index of all life-stage phases. Each entry points to a phase JSON file under phases/.",
+  "phases": [
+    { "id": "phase-01", "order": 1,  "slug": "0-3-years",   "title": "Foundations (0–3 years)",                 "ageLabel": "0–3",   "primaryObjective": "Attachment, safety, sensory exploration",        "file": "phases/phase-01/phase.json" },
+    { "id": "phase-02", "order": 2,  "slug": "3-6-years",   "title": "Curiosity & Communication (3–6 years)",   "ageLabel": "3–6",   "primaryObjective": "Curiosity, communication, independence",         "file": "phases/phase-02/phase.json" },
+    { "id": "phase-03", "order": 3,  "slug": "6-10-years",  "title": "Foundations of Reasoning (6–10 years)",   "ageLabel": "6–10",  "primaryObjective": "Foundational knowledge, reasoning, creativity",  "file": "phases/phase-03/phase.json" },
+    { "id": "phase-04", "order": 4,  "slug": "10-12-years", "title": "Thinking & Responsibility (10–12 years)", "ageLabel": "10–12", "primaryObjective": "Critical thinking, responsibility",              "file": "phases/phase-04/phase.json" },
+    { "id": "phase-05", "order": 5,  "slug": "12-15-years", "title": "Identity & Ideas (12–15 years)",          "ageLabel": "12–15", "primaryObjective": "Identity, science, technology, ethics",          "file": "phases/phase-05/phase.json" },
+    { "id": "phase-06", "order": 6,  "slug": "15-17-years", "title": "Direction & Discovery (15–17 years)",     "ageLabel": "15–17", "primaryObjective": "Advanced learning, career discovery",            "file": "phases/phase-06/phase.json" },
+    { "id": "phase-07", "order": 7,  "slug": "17-20-years", "title": "Applied Mastery (17–20 years)",           "ageLabel": "17–20", "primaryObjective": "Higher-education-level practical knowledge",     "file": "phases/phase-07/phase.json" },
+    { "id": "phase-08", "order": 8,  "slug": "20-24-years", "title": "Expertise & Research (20–24 years)",      "ageLabel": "20–24", "primaryObjective": "Expertise, research, professional skills",       "file": "phases/phase-08/phase.json" },
+    { "id": "phase-09", "order": 9,  "slug": "24-28-years", "title": "Innovation & Leadership (24–28 years)",   "ageLabel": "24–28", "primaryObjective": "Innovation, entrepreneurship, leadership",       "file": "phases/phase-09/phase.json" },
+    { "id": "phase-10", "order": 10, "slug": "28-35-years", "title": "Building & Contributing (28–35 years)",   "ageLabel": "28–35", "primaryObjective": "Building, creating, contributing",               "file": "phases/phase-10/phase.json" },
+    { "id": "phase-11", "order": 11, "slug": "35-40-years", "title": "Strategy & Mentorship (35–40 years)",     "ageLabel": "35–40", "primaryObjective": "Strategic thinking, mentorship",                 "file": "phases/phase-11/phase.json" },
+    { "id": "phase-12", "order": 12, "slug": "40-plus",     "title": "Reinvention & Wisdom (40+)",              "ageLabel": "40+",   "primaryObjective": "Reinvention, wisdom, lifelong contribution",     "file": "phases/phase-12/phase.json" },
+    { "id": "phase-13", "order": 13, "slug": "legacy",      "title": "Legacy & Lifelong Learning (40+)",        "ageLabel": "40+",   "primaryObjective": "Legacy, giving back, lifelong learning",         "file": "phases/phase-13/phase.json" }
+  ]
+}

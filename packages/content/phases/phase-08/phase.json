@@ -1,0 +1,100 @@
+{
+  "$schema": "../../schema/phase.schema.json",
+  "id": "phase-08",
+  "slug": "20-24-years",
+  "order": 8,
+  "title": "Phase 08 — Expertise & Research (20–24 years)",
+  "ageRange": { "label": "20–24 years", "startYears": 20, "endYears": 24, "indicative": true },
+  "primaryObjective": "Expertise, research, and professional skills — the adult develops deep competence and contributes original work.",
+  "summary": "In the early twenties the adult moves from applied capability toward genuine expertise. The focus is going deep: mastering a craft or discipline, doing original research or building serious products, and developing the professional judgement and habits that distinguish an expert. Alongside technical depth come financial independence, ethical responsibility, and the ability to keep learning as fields change. The platform supports the autonomous adult learner and connects them with mentors and peers.",
+  "guidingPrinciple": "Depth with purpose. Expertise is not knowledge hoarded but capability used to create value, advance understanding, and serve others.",
+  "developmentDomains": [
+    { "domain": "financial-and-professional", "focus": "Deep professional competence, career development, financial independence, and long-term planning." },
+    { "domain": "critical-thinking-problem-solving", "focus": "Original research, rigorous analysis, and solving hard, ambiguous problems at a high level." },
+    { "domain": "scientific-thinking", "focus": "Research methods, evidence, experimentation, and advancing knowledge in a field." },
+    { "domain": "innovation-entrepreneurship-leadership", "focus": "Building serious products or research, leading initiatives, and creating value from expertise." },
+    { "domain": "technology-and-digital", "focus": "Advanced and responsible use of technology and AI to extend expertise and productivity." },
+    { "domain": "ethics-responsibility-citizenship", "focus": "Research and professional ethics, responsibility for impact, and integrity under pressure." },
+    { "domain": "emotional-and-resilience", "focus": "Sustaining motivation, managing stress and work–life balance, and resilience through hard problems." },
+    { "domain": "contribution-to-society", "focus": "Using expertise to address real problems and benefit communities and fields." }
+  ],
+  "yearPlans": [
+    {
+      "label": "Age 20–22 (Deepening)",
+      "objectives": [
+        "Develop deep competence in a chosen craft, discipline, or profession.",
+        "Undertake original research or build a serious product or body of work.",
+        "Establish financial independence and long-term planning.",
+        "Build professional judgement through real responsibility and feedback."
+      ],
+      "capabilities": [
+        "Performs at a high standard and keeps improving deliberately.",
+        "Designs and carries out original research or a substantial build.",
+        "Lives within their means and plans for the longer term.",
+        "Makes sound professional judgements and learns from outcomes."
+      ]
+    },
+    {
+      "label": "Age 22–24 (Emerging expertise)",
+      "objectives": [
+        "Produce work recognised for quality by peers in the field.",
+        "Lead a project, study, or small team toward a real outcome.",
+        "Apply rigorous ethics to research and professional decisions.",
+        "Keep learning as tools and knowledge in the field evolve."
+      ],
+      "capabilities": [
+        "Delivers work peers regard as high quality and can defend it rigorously.",
+        "Leads a project or team and takes responsibility for results.",
+        "Identifies and resolves ethical issues in complex situations.",
+        "Updates their skills independently as the field changes."
+      ]
+    }
+  ],
+  "activities": {
+    "daily": [
+      { "title": "Deliberate deep work", "description": "Protect a focused block for the hardest, most valuable work, pushing the edge of your ability with feedback.", "domain": "financial-and-professional" },
+      { "title": "Learning log", "description": "Capture what you learned and what questions remain, keeping your expertise current and honest about gaps.", "domain": "scientific-thinking" }
+    ],
+    "weekly": [
+      { "title": "Advance original work", "description": "Move a research question or serious build forward with a concrete step and share progress for critique.", "domain": "innovation-entrepreneurship-leadership" },
+      { "title": "Peer review", "description": "Give and receive rigorous feedback with peers to raise the standard and sharpen judgement.", "domain": "critical-thinking-problem-solving" },
+      { "title": "Financial and career review", "description": "Review finances, long-term plans, and career direction, adjusting as goals and circumstances change.", "domain": "financial-and-professional" }
+    ]
+  },
+  "milestones": [
+    { "area": "Expertise", "description": "Produces work recognised as high quality by peers in the field", "typicalBy": "by 24 years", "sourceRef": "oecd-learning-compass" },
+    { "area": "Research", "description": "Designs and completes original research or a substantial build", "typicalBy": "by 24 years", "sourceRef": "unesco-higher-education" },
+    { "area": "Financial", "description": "Achieves financial independence and plans for the long term", "typicalBy": "by 24 years", "sourceRef": "unesco-education" },
+    { "area": "Leadership", "description": "Leads a project or small team to a real outcome", "typicalBy": "by 24 years", "sourceRef": "oecd-learning-compass" }
+  ],
+  "safety": [
+    { "topic": "Mental health and burnout", "guidance": "Intense work can lead to burnout. Protect rest and balance, and seek professional help for persistent stress, anxiety, or depression. In crisis, contact local emergency or crisis services immediately." },
+    { "topic": "Research and professional integrity", "guidance": "Uphold honesty in data, authorship, and reporting. Resist pressure to cut corners, and raise concerns through proper channels; the platform never substitutes for professional ethics bodies." },
+    { "topic": "Financial safety", "guidance": "As income grows, understand tax, debt, and investment risk, and beware of high-pressure or fraudulent schemes. Seek qualified financial and legal advice for significant decisions." },
+    { "topic": "Wellbeing and relationships", "guidance": "Sustain supportive relationships alongside demanding work. Isolation and overwork harm wellbeing; the platform encourages real human connection and professional support, not substitutes for them." }
+  ],
+  "outcomes": [
+    "The adult demonstrates deep, recognised competence in a chosen field.",
+    "The adult produces original research or serious work and can defend it.",
+    "The adult is financially independent and plans for the long term.",
+    "The adult applies rigorous ethics to professional and research decisions.",
+    "The adult leads projects and keeps learning as the field evolves."
+  ],
+  "projects": [
+    { "title": "Original research study", "description": "Design and carry out a real research study or investigation, from question to method to findings, and share it for peer critique.", "skillsPractised": ["research-methods", "analysis", "scientific-writing"] },
+    { "title": "Ship a serious product", "description": "Build and release a product or body of work to real users or an audience, iterating on genuine feedback and metrics.", "skillsPractised": ["product-development", "technical-depth", "iteration"] },
+    { "title": "Lead a professional initiative", "description": "Lead a project or small team toward a defined outcome, owning planning, delivery, and the result.", "skillsPractised": ["leadership", "project-management", "accountability"] }
+  ],
+  "appFeatures": [
+    { "feature": "Expertise development tracker", "userJourney": "A learner maps their path to mastery, logs deliberate practice and feedback, and curates a portfolio of serious work.", "audience": "learner" },
+    { "feature": "Research & peer-review space", "userJourney": "A learner shares research or builds for rigorous peer feedback and finds collaborators, with integrity guidance built in.", "audience": "learner" },
+    { "feature": "Financial-independence planner", "userJourney": "A learner plans savings, investments, and long-term goals, with clear prompts to consult qualified advisers for significant decisions.", "audience": "learner" },
+    { "feature": "Mentor and educator collaboration", "userJourney": "An educator or mentor guides advanced learners through research and professional milestones as a partner, not a gatekeeper.", "audience": "educator" }
+  ],
+  "sources": [
+    { "id": "oecd-learning-compass", "title": "OECD Future of Education and Skills 2030 — Learning Compass", "org": "OECD", "url": "https://www.oecd.org/education/2030-project/" },
+    { "id": "unesco-education", "title": "Education", "org": "UNESCO", "url": "https://www.unesco.org/en/education" },
+    { "id": "unesco-higher-education", "title": "Higher Education", "org": "UNESCO", "url": "https://www.unesco.org/en/higher-education" },
+    { "id": "who-mental-health", "title": "Mental Health", "org": "World Health Organization", "url": "https://www.who.int/health-topics/mental-health" }
+  ]
+}

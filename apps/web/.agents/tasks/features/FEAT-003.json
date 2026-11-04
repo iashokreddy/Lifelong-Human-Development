@@ -1,0 +1,25 @@
+{
+  "id": "FEAT-003",
+  "type": "test",
+  "description": "Full offline verification plus the live runtime HTML probe, recorded in apps/web/VERIFICATION.md. Confirms the app builds offline, lints clean, tests pass, and that real curriculum content and the 'never replaces' principle render as actual HTML when the real API and web server run together. Depends on FEAT-001 and FEAT-002.",
+  "status": "completed",
+  "steps": [
+    "Run the three offline checks from apps/web and capture their output: 'npm run build' (must be 0 errors with the API NOT running), 'npm run lint' (no errors), and 'npm test' (all pass). Also confirm from the repo root that 'npm run test:web' works.",
+    "Build and start the API as a BACKGROUND process: from apps/api run 'npm run build' then 'node dist/main.js' (port 3001). Wait until the log 'Loaded 13 phase(s) of 13 catalog entries' appears before probing.",
+    "Build and start the web app as a BACKGROUND process: from apps/web run 'npm run build' then 'npm run start' (port 3000).",
+    "Write a small temporary probe script (e.g. apps/web/tmp-probe.ps1) and run it with 'powershell -ExecutionPolicy Bypass -File apps/web/tmp-probe.ps1' (prefer this over long inline one-liners). The script GETs http://localhost:3000/ and http://localhost:3000/phases/phase-01 and asserts the returned HTML contains: a phase title such as 'Foundations'; the 'never replaces'/'supports' principle text; and real phase-01 curriculum text such as a development-domain focus phrase or an activity title (e.g. 'Serve and return' or 'Tummy time'). Capture the matched snippets.",
+    "STOP both background servers (web then API) and DELETE the temporary probe script. Ensure no stray node/next background processes remain.",
+    "Write apps/web/VERIFICATION.md documenting all four checks (build offline, lint, test:web, runtime HTML probe) with the captured command output / matched HTML snippets and a clear PASS for each."
+  ],
+  "acceptance_criteria": [
+    "apps/web/VERIFICATION.md exists and records: (1) offline 'npm run build' 0 errors, (2) 'npm run lint' no errors, (3) 'npm run test:web' pass, (4) runtime HTML probe PASS with snippets proving phase title, the never-replaces/supports principle, and real phase-01 curriculum text on both / and /phases/phase-01.",
+    "Both servers were started as background processes and then stopped; the temp probe script was deleted; no stray processes remain.",
+    "No files outside apps/web were modified except the additive root package.json scripts from FEAT-001."
+  ],
+  "verification": [
+    "cd apps/web; npm run build; npm run lint; npm test  (all pass, API down)",
+    "Start API (apps/api: npm run build; node dist/main.js) and web (apps/web: npm run build; npm run start) as background jobs; run the probe .ps1 via 'powershell -ExecutionPolicy Bypass -File'; confirm HTML on / and /phases/phase-01 contains the required strings; then stop both servers and remove the temp script",
+    "Open apps/web/VERIFICATION.md and confirm all four checks are recorded as PASS with evidence"
+  ],
+  "blocked_reason": null,
+  "findings": "DELIVERED & VERIFIED. apps/web/VERIFICATION.md written with all four checks as PASS. (1) Offline `npm run build` 0 errors with API down (routes /, /_not-found, /assistant, /phases, /phases/[idOrSlug]). (2) `npm run lint` clean. (3) `npm run test:web` (root) and `npm test` (apps/web) = 21 tests, 3 suites, all pass (runner is Jest via next/jest, not Vitest — the '%' in the workspace path breaks Vite's decodeURI; see FEAT-001 findings). (4) Runtime HTML probe: built + started API (apps/api: npm run build; node dist/main.js on 3001; waited for 'Loaded 13 phase(s) of 13 catalog entries') and web (apps/web: npm run build; next start on 3000) as background processes, ran apps/web/tmp-probe.ps1 via 'powershell -ExecutionPolicy Bypass -File'. GET / matched 'Foundations', 'strengthens and never replaces', 'how to think'. GET /phases/phase-01 matched 'Foundations', 'never replaces', 'Serve and return', 'Physical &amp; motor'. PROBE RESULT: PASS. Both servers then stopped (no listeners remain on 3000/3001), temp probe script and temp logs deleted. Only files under apps/web plus the additive root package.json scripts (from FEAT-001) were modified.\n\nENV NOTES for future runs on Windows: next/node binaries are hoisted to the repo-root node_modules (…/node_modules/next/dist/bin/next), not apps/web/node_modules. Because the repo path contains spaces, launch background servers with Start-Process -FilePath node -ArgumentList '\"<full path>\\next\"','start','-p','3000' (quote the script path). In the probe .ps1 do NOT name a variable $home (reserved/read-only in PowerShell)."

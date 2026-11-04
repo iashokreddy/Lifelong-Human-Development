@@ -1,0 +1,25 @@
+.empty {
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.message {
+  margin: 0 auto 1rem;
+  max-width: 34rem;
+  color: var(--text-muted);
+}
+
+.detail {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
